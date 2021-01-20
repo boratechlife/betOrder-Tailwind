@@ -7,17 +7,20 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ["Roboto", ...defaultTheme.fontFamily.sans],
-                title: ["Montserrat", ...defaultTheme.fontFamily.sans]
+
             },
 
             fontSize: {
                 large: '2.5rem',
             },
             colors: {
-                primary: '#1ab7ea',
-                grayish: '#f7f9fb',
-                'dark': '#262f3c'
-
+                primary: '#116466',
+                secondary: '#E94349',
+                black: '#19181A',
+                'yellow': '#FFA805',
+                'dark': '#252429',
+                'grey': '#b3b3b3',
+                'darker': '#1d1d20'
 
             },
 

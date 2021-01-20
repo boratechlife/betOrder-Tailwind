@@ -1,0 +1,13 @@
+{
+    "folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\Downloads\\OwlCarousel2-2.3.4\\OwlCarousel2-2.3.4"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "Tailwind2.0"
+    }
+}

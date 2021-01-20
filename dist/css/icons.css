@@ -1,0 +1,5177 @@
+@font-face {
+    font-family: beticon;
+    src: url(https://betorder162.com/beticon.d4beb91dd6009dac2b77.woff2) format("woff2"), url(https://betorder162.com/beticon.0a916c7f44cbb2f7877e.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+.icon:after,
+.icon:before {
+    font-family: beticon;
+    font-style: normal;
+    font-weight: 400;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.bet-_blank:before {
+    content: ""
+}
+
+.bet-glass:before {
+    content: ""
+}
+
+.bet-music:before {
+    content: ""
+}
+
+.bet-search:before {
+    content: ""
+}
+
+.bet-mail:before {
+    content: ""
+}
+
+.bet-heart:before {
+    content: ""
+}
+
+.bet-heart-empty:before {
+    content: ""
+}
+
+.bet-star:before {
+    content: ""
+}
+
+.bet-star-empty:before {
+    content: ""
+}
+
+.bet-star-half:before {
+    content: ""
+}
+
+.bet-user:before {
+    content: ""
+}
+
+.bet-users:before {
+    content: ""
+}
+
+.bet-video:before {
+    content: ""
+}
+
+.bet-videocam:before {
+    content: ""
+}
+
+.bet-picture:before {
+    content: ""
+}
+
+.bet-camera:before {
+    content: ""
+}
+
+.bet-camera-alt:before {
+    content: ""
+}
+
+.bet-th-large:before {
+    content: ""
+}
+
+.bet-th:before {
+    content: ""
+}
+
+.bet-th-list:before {
+    content: ""
+}
+
+.bet-ok:before {
+    content: ""
+}
+
+.bet-ok-circled:before {
+    content: ""
+}
+
+.bet-check-1:before {
+    content: ""
+}
+
+.bet-ok-circled2:before {
+    content: ""
+}
+
+.bet-cancel:before {
+    content: ""
+}
+
+.bet-cancel-circled:before {
+    content: ""
+}
+
+.bet-cancel-circled2:before {
+    content: ""
+}
+
+.bet-plus:before {
+    content: ""
+}
+
+.bet-plus-circled:before {
+    content: ""
+}
+
+.bet-minus:before {
+    content: ""
+}
+
+.bet-minus-circled:before {
+    content: ""
+}
+
+.bet-help-circled:before {
+    content: ""
+}
+
+.bet-info-circled:before {
+    content: ""
+}
+
+.bet-home:before {
+    content: ""
+}
+
+.bet-link:before {
+    content: ""
+}
+
+.bet-attach:before {
+    content: ""
+}
+
+.bet-lock:before {
+    content: ""
+}
+
+.bet-lock-open:before {
+    content: ""
+}
+
+.bet-pin:before {
+    content: ""
+}
+
+.bet-eye:before {
+    content: ""
+}
+
+.bet-eye-off:before {
+    content: ""
+}
+
+.bet-tag:before {
+    content: ""
+}
+
+.bet-tags:before {
+    content: ""
+}
+
+.bet-bookmark:before {
+    content: ""
+}
+
+.bet-flag:before {
+    content: ""
+}
+
+.bet-thumbs-up:before {
+    content: ""
+}
+
+.bet-thumbs-down:before {
+    content: ""
+}
+
+.bet-download:before {
+    content: ""
+}
+
+.bet-upload:before {
+    content: ""
+}
+
+.bet-forward:before {
+    content: ""
+}
+
+.bet-export:before {
+    content: ""
+}
+
+.bet-pencil:before {
+    content: ""
+}
+
+.bet-edit:before {
+    content: ""
+}
+
+.bet-print:before {
+    content: ""
+}
+
+.bet-retweet:before {
+    content: ""
+}
+
+.bet-comment:before {
+    content: ""
+}
+
+.bet-chat:before {
+    content: ""
+}
+
+.bet-bell:before {
+    content: ""
+}
+
+.bet-attention:before {
+    content: ""
+}
+
+.bet-attention-circled:before {
+    content: ""
+}
+
+.bet-location:before {
+    content: ""
+}
+
+.bet-trash-empty:before {
+    content: ""
+}
+
+.bet-doc:before {
+    content: ""
+}
+
+.bet-folder:before {
+    content: ""
+}
+
+.bet-folder-open:before {
+    content: ""
+}
+
+.bet-phone:before {
+    content: ""
+}
+
+.bet-cog:before {
+    content: ""
+}
+
+.bet-cog-alt:before {
+    content: ""
+}
+
+.bet-wrench:before {
+    content: ""
+}
+
+.bet-basket:before {
+    content: ""
+}
+
+.bet-calendar:before {
+    content: ""
+}
+
+.bet-login:before {
+    content: ""
+}
+
+.bet-logout:before {
+    content: ""
+}
+
+.bet-volume-off:before {
+    content: ""
+}
+
+.bet-volume-down:before {
+    content: ""
+}
+
+.bet-volume-up:before {
+    content: ""
+}
+
+.bet-headphones:before {
+    content: ""
+}
+
+.bet-clock:before {
+    content: ""
+}
+
+.bet-block:before {
+    content: ""
+}
+
+.bet-resize-full:before {
+    content: ""
+}
+
+.bet-resize-small:before {
+    content: ""
+}
+
+.bet-resize-vertical:before {
+    content: ""
+}
+
+.bet-resize-horizontal:before {
+    content: ""
+}
+
+.bet-zoom-in:before {
+    content: ""
+}
+
+.bet-zoom-out:before {
+    content: ""
+}
+
+.bet-down-circled2:before {
+    content: ""
+}
+
+.bet-up-circled2:before {
+    content: ""
+}
+
+.bet-down-dir:before {
+    content: ""
+}
+
+.bet-up-dir:before {
+    content: ""
+}
+
+.bet-left-dir:before {
+    content: ""
+}
+
+.bet-right-dir:before {
+    content: ""
+}
+
+.bet-down-open:before {
+    content: ""
+}
+
+.bet-left-open:before {
+    content: ""
+}
+
+.bet-right-open:before {
+    content: ""
+}
+
+.bet-up-open:before {
+    content: ""
+}
+
+.bet-down-big:before {
+    content: ""
+}
+
+.bet-left-big:before {
+    content: ""
+}
+
+.bet-right-big:before {
+    content: ""
+}
+
+.bet-up-big:before {
+    content: ""
+}
+
+.bet-right-hand:before {
+    content: ""
+}
+
+.bet-left-hand:before {
+    content: ""
+}
+
+.bet-up-hand:before {
+    content: ""
+}
+
+.bet-down-hand:before {
+    content: ""
+}
+
+.bet-cw:before {
+    content: ""
+}
+
+.bet-ccw:before {
+    content: ""
+}
+
+.bet-arrows-cw:before {
+    content: ""
+}
+
+.bet-shuffle:before {
+    content: ""
+}
+
+.bet-play:before {
+    content: ""
+}
+
+.bet-play-circled2:before {
+    content: ""
+}
+
+.bet-stop:before {
+    content: ""
+}
+
+.bet-pause:before {
+    content: ""
+}
+
+.bet-to-end:before {
+    content: ""
+}
+
+.bet-to-end-alt:before {
+    content: ""
+}
+
+.bet-to-start:before {
+    content: ""
+}
+
+.bet-to-start-alt:before {
+    content: ""
+}
+
+.bet-fast-fw:before {
+    content: ""
+}
+
+.bet-fast-bw:before {
+    content: ""
+}
+
+.bet-eject:before {
+    content: ""
+}
+
+.bet-target:before {
+    content: ""
+}
+
+.bet-signal:before {
+    content: ""
+}
+
+.bet-award:before,
+.bet-SCRATCHCARDS:before {
+    content: ""
+}
+
+.bet-inbox:before {
+    content: ""
+}
+
+.bet-globe:before {
+    content: ""
+}
+
+.bet-cloud:before {
+    content: ""
+}
+
+.bet-flash:before {
+    content: ""
+}
+
+.bet-umbrella:before {
+    content: ""
+}
+
+.bet-flight:before {
+    content: ""
+}
+
+.bet-leaf:before {
+    content: ""
+}
+
+.bet-font:before {
+    content: ""
+}
+
+.bet-bold:before {
+    content: ""
+}
+
+.bet-italic:before {
+    content: ""
+}
+
+.bet-text-height:before {
+    content: ""
+}
+
+.bet-text-width:before {
+    content: ""
+}
+
+.bet-align-left:before {
+    content: ""
+}
+
+.bet-align-center:before {
+    content: ""
+}
+
+.bet-align-right:before {
+    content: ""
+}
+
+.bet-align-justify:before {
+    content: ""
+}
+
+.bet-list:before {
+    content: ""
+}
+
+.bet-indent-left:before {
+    content: ""
+}
+
+.bet-indent-right:before {
+    content: ""
+}
+
+.bet-scissors:before {
+    content: ""
+}
+
+.bet-briefcase:before {
+    content: ""
+}
+
+.bet-off:before {
+    content: ""
+}
+
+.bet-road:before,
+.bet-VIRTUALSPORTS:before {
+    content: ""
+}
+
+.bet-list-alt:before {
+    content: ""
+}
+
+.bet-qrcode:before {
+    content: ""
+}
+
+.bet-barcode:before {
+    content: ""
+}
+
+.bet-book:before {
+    content: ""
+}
+
+.bet-adjust:before {
+    content: ""
+}
+
+.bet-tint:before {
+    content: ""
+}
+
+.bet-check:before {
+    content: ""
+}
+
+.bet-asterisk:before {
+    content: ""
+}
+
+.bet-gift:before {
+    content: ""
+}
+
+.bet-fire:before {
+    content: ""
+}
+
+.bet-magnet:before {
+    content: ""
+}
+
+.bet-chart-bar:before {
+    content: ""
+}
+
+.bet-credit-card:before {
+    content: ""
+}
+
+.bet-floppy:before {
+    content: ""
+}
+
+.bet-megaphone:before {
+    content: ""
+}
+
+.bet-key:before {
+    content: ""
+}
+
+.bet-truck:before {
+    content: ""
+}
+
+.bet-hammer:before {
+    content: ""
+}
+
+.bet-lemon:before {
+    content: ""
+}
+
+.bet-cancel-1:before {
+    content: ""
+}
+
+.bet-ok-1:before {
+    content: ""
+}
+
+.bet-cancel-2:before {
+    content: ""
+}
+
+.bet-best-collection:before {
+    content: ""
+}
+
+.bet-bitcoin-1:before {
+    content: ""
+}
+
+.bet-cards:before {
+    content: ""
+}
+
+.bet-cards-double:before,
+.bet-TABLEGAMES:before {
+    content: ""
+}
+
+.bet-cherry:before,
+.bet-OTHERGAMES:before {
+    content: ""
+}
+
+.bet-chip-01:before,
+.bet-VIDEOSLOTS:before {
+    content: ""
+}
+
+.bet-close:before {
+    content: ""
+}
+
+.bet-CLASSICSLOTS:before,
+.bet-clover-2:before {
+    content: ""
+}
+
+.bet-crown:before,
+.bet-LIVEDEALER:before {
+    content: ""
+}
+
+.bet-diamond-1:before {
+    content: ""
+}
+
+.bet-dice:before {
+    content: ""
+}
+
+.bet-dice-2:before {
+    content: ""
+}
+
+.bet-dice-3:before,
+.bet-VIDEOPOKERS:before {
+    content: ""
+}
+
+.bet-fbd98308:before {
+    content: ""
+}
+
+.bet-gamcare:before {
+    content: ""
+}
+
+.bet-luck:before {
+    content: ""
+}
+
+.bet-medal:before {
+    content: ""
+}
+
+.bet-newbadge-01:before {
+    content: ""
+}
+
+.bet-play-in:before {
+    content: ""
+}
+
+.bet-play-out:before {
+    content: ""
+}
+
+.bet-poker-chips:before {
+    content: ""
+}
+
+.bet-pokertable:before {
+    content: ""
+}
+
+.bet-red-card:before {
+    content: ""
+}
+
+.bet-reload:before {
+    content: ""
+}
+
+.bet-roulette:before {
+    content: ""
+}
+
+.bet-scoreboard:before {
+    content: ""
+}
+
+.bet-slot-machine:before {
+    content: ""
+}
+
+.bet-soccer-shoe:before {
+    content: ""
+}
+
+.bet-JACKPOTGAMES:before,
+.bet-spades:before {
+    content: ""
+}
+
+.bet-whistle:before {
+    content: ""
+}
+
+.bet-world:before {
+    content: ""
+}
+
+.bet-LOTTERY:before,
+.bet-yellow-card:before {
+    content: ""
+}
+
+.bet-bundesliga:before {
+    content: ""
+}
+
+.bet-league-205:before {
+    content: ""!important
+}
+
+.bet-ligue-1:before {
+    content: ""
+}
+
+.bet-league-24:before {
+    content: ""!important
+}
+
+.bet-premier-league:before {
+    content: ""
+}
+
+.bet-league-78:before {
+    content: ""!important
+}
+
+.bet-la-liga:before {
+    content: ""
+}
+
+.bet-league-129:before {
+    content: ""!important
+}
+
+.bet-super-toto-turkey:before {
+    content: ""
+}
+
+.bet-league-329:before {
+    content: ""!important
+}
+
+.bet-world-cup-2018:before {
+    content: ""
+}
+
+.bet-top-leagues:before {
+    content: ""
+}
+
+.bet-champions-league:before {
+    content: ""
+}
+
+.bet-europa-league:before {
+    content: ""
+}
+
+.bet-serie-a:before {
+    content: ""
+}
+
+.bet-league-128:before {
+    content: ""!important
+}
+
+.bet-basketball:before {
+    content: ""
+}
+
+.bet-tennis:before {
+    content: ""
+}
+
+.bet-ice-hockey:before {
+    content: ""
+}
+
+.bet-motor-sports:before,
+.bet-motorsport:before {
+    content: ""
+}
+
+.bet-volleyball:before {
+    content: ""
+}
+
+.bet-american-football:before,
+.bet-football:before {
+    content: ""
+}
+
+.bet-rugby:before {
+    content: ""
+}
+
+.bet-futsal:before {
+    content: ""
+}
+
+.bet-handball:before {
+    content: ""
+}
+
+.bet-snooker:before {
+    content: ""
+}
+
+.bet-baseball:before {
+    content: ""
+}
+
+.bet-boxing:before {
+    content: ""
+}
+
+.bet-mma:before {
+    content: ""
+}
+
+.bet-cycling:before {
+    content: ""
+}
+
+.bet-golf:before {
+    content: ""
+}
+
+.bet-cricket:before {
+    content: ""
+}
+
+.bet-winter-sports:before {
+    content: ""
+}
+
+.bet-table-tennis:before {
+    content: ""
+}
+
+.bet-waterpolo:before {
+    content: ""
+}
+
+.bet-darts:before {
+    content: ""
+}
+
+.bet-beach-volley:before,
+.bet-beach-volleyball:before {
+    content: ""
+}
+
+.bet-beach-soccer:before {
+    content: ""
+}
+
+.bet-squash:before {
+    content: ""
+}
+
+.bet-sailing:before {
+    content: ""
+}
+
+.bet-bowls:before {
+    content: ""
+}
+
+.bet-aussie-rules:before,
+.bet-aussie_rules:before {
+    content: ""
+}
+
+.bet-olympics:before {
+    content: ""
+}
+
+.bet-curling:before {
+    content: ""
+}
+
+.bet-floorball:before {
+    content: ""
+}
+
+.bet-bandy:before {
+    content: ""
+}
+
+.bet-fantasy:before {
+    content: ""
+}
+
+.bet-badminton:before {
+    content: ""
+}
+
+.bet-pesapallo:before {
+    content: ""
+}
+
+.bet-league-of-legends:before {
+    content: ""!important
+}
+
+.bet-specials:before {
+    content: ""
+}
+
+.bet-counter-strike:before {
+    content: ""
+}
+
+.bet-field-hockey:before {
+    content: ""
+}
+
+.bet-starcraft:before {
+    content: ""
+}
+
+.bet-fencing:before {
+    content: ""
+}
+
+.bet-soccer-special:before {
+    content: ""
+}
+
+.bet-soccer:before {
+    content: ""
+}
+
+.bet-goal:before {
+    content: ""
+}
+
+.bet-down-open-1:before {
+    content: ""
+}
+
+.bet-up-open-1:before {
+    content: ""
+}
+
+.bet-move:before {
+    content: ""
+}
+
+.bet-link-ext:before {
+    content: ""
+}
+
+.bet-check-empty:before {
+    content: ""
+}
+
+.bet-bookmark-empty:before {
+    content: ""
+}
+
+.bet-phone-squared:before {
+    content: ""
+}
+
+.bet-twitter:before {
+    content: ""
+}
+
+.bet-facebook:before {
+    content: ""
+}
+
+.bet-github-circled:before {
+    content: ""
+}
+
+.bet-rss:before {
+    content: ""
+}
+
+.bet-hdd:before {
+    content: ""
+}
+
+.bet-certificate:before {
+    content: ""
+}
+
+.bet-left-circled:before {
+    content: ""
+}
+
+.bet-right-circled:before {
+    content: ""
+}
+
+.bet-up-circled:before {
+    content: ""
+}
+
+.bet-down-circled:before {
+    content: ""
+}
+
+.bet-tasks:before {
+    content: ""
+}
+
+.bet-filter:before {
+    content: ""
+}
+
+.bet-resize-full-alt:before {
+    content: ""
+}
+
+.bet-beaker:before {
+    content: ""
+}
+
+.bet-docs:before {
+    content: ""
+}
+
+.bet-blank:before {
+    content: ""
+}
+
+.bet-menu:before {
+    content: ""
+}
+
+.bet-list-bullet:before {
+    content: ""
+}
+
+.bet-list-numbered:before {
+    content: ""
+}
+
+.bet-strike:before {
+    content: ""
+}
+
+.bet-underline:before {
+    content: ""
+}
+
+.bet-table:before {
+    content: ""
+}
+
+.bet-magic:before {
+    content: ""
+}
+
+.bet-pinterest-circled:before {
+    content: ""
+}
+
+.bet-pinterest-squared:before {
+    content: ""
+}
+
+.bet-gplus-squared:before {
+    content: ""
+}
+
+.bet-gplus:before {
+    content: ""
+}
+
+.bet-money:before {
+    content: ""
+}
+
+.bet-columns:before {
+    content: ""
+}
+
+.bet-sort:before {
+    content: ""
+}
+
+.bet-sort-down:before {
+    content: ""
+}
+
+.bet-sort-up:before {
+    content: ""
+}
+
+.bet-mail-alt:before {
+    content: ""
+}
+
+.bet-linkedin:before {
+    content: ""
+}
+
+.bet-gauge:before {
+    content: ""
+}
+
+.bet-comment-empty:before {
+    content: ""
+}
+
+.bet-chat-empty:before {
+    content: ""
+}
+
+.bet-sitemap:before {
+    content: ""
+}
+
+.bet-paste:before {
+    content: ""
+}
+
+.bet-lightbulb:before {
+    content: ""
+}
+
+.bet-exchange:before {
+    content: ""
+}
+
+.bet-download-cloud:before {
+    content: ""
+}
+
+.bet-upload-cloud:before {
+    content: ""
+}
+
+.bet-user-md:before {
+    content: ""
+}
+
+.bet-stethoscope:before {
+    content: ""
+}
+
+.bet-suitcase:before {
+    content: ""
+}
+
+.bet-bell-alt:before {
+    content: ""
+}
+
+.bet-coffee:before {
+    content: ""
+}
+
+.bet-food:before {
+    content: ""
+}
+
+.bet-doc-text:before {
+    content: ""
+}
+
+.bet-building:before {
+    content: ""
+}
+
+.bet-hospital:before {
+    content: ""
+}
+
+.bet-ambulance:before {
+    content: ""
+}
+
+.bet-medkit:before {
+    content: ""
+}
+
+.bet-fighter-jet:before {
+    content: ""
+}
+
+.bet-beer:before {
+    content: ""
+}
+
+.bet-h-sigh:before {
+    content: ""
+}
+
+.bet-plus-squared:before {
+    content: ""
+}
+
+.bet-angle-double-left:before {
+    content: ""
+}
+
+.bet-angle-double-right:before {
+    content: ""
+}
+
+.bet-angle-double-up:before {
+    content: ""
+}
+
+.bet-angle-double-down:before {
+    content: ""
+}
+
+.bet-angle-left:before {
+    content: ""
+}
+
+.bet-angle-right:before {
+    content: ""
+}
+
+.bet-angle-up:before {
+    content: ""
+}
+
+.bet-angle-down:before {
+    content: ""
+}
+
+.bet-desktop:before {
+    content: ""
+}
+
+.bet-laptop:before {
+    content: ""
+}
+
+.bet-tablet:before {
+    content: ""
+}
+
+.bet-mobile:before {
+    content: ""
+}
+
+.bet-circle-empty:before {
+    content: ""
+}
+
+.bet-quote-left:before {
+    content: ""
+}
+
+.bet-quote-right:before {
+    content: ""
+}
+
+.bet-spinner:before {
+    content: ""
+}
+
+.bet-circle:before {
+    content: ""
+}
+
+.bet-reply:before {
+    content: ""
+}
+
+.bet-github:before {
+    content: ""
+}
+
+.bet-folder-empty:before {
+    content: ""
+}
+
+.bet-folder-open-empty:before {
+    content: ""
+}
+
+.bet-smile:before {
+    content: ""
+}
+
+.bet-frown:before {
+    content: ""
+}
+
+.bet-meh:before {
+    content: ""
+}
+
+.bet-gamepad:before,
+.bet-MINIGAMES:before {
+    content: ""
+}
+
+.bet-keyboard:before {
+    content: ""
+}
+
+.bet-flag-empty:before {
+    content: ""
+}
+
+.bet-flag-checkered:before {
+    content: ""
+}
+
+.bet-terminal:before {
+    content: ""
+}
+
+.bet-code:before {
+    content: ""
+}
+
+.bet-reply-all:before {
+    content: ""
+}
+
+.bet-star-half-alt:before {
+    content: ""
+}
+
+.bet-direction:before {
+    content: ""
+}
+
+.bet-crop:before {
+    content: ""
+}
+
+.bet-fork:before {
+    content: ""
+}
+
+.bet-unlink:before {
+    content: ""
+}
+
+.bet-help:before {
+    content: ""
+}
+
+.bet-info:before {
+    content: ""
+}
+
+.bet-attention-alt:before {
+    content: ""
+}
+
+.bet-superscript:before {
+    content: ""
+}
+
+.bet-subscript:before {
+    content: ""
+}
+
+.bet-eraser:before {
+    content: ""
+}
+
+.bet-puzzle:before {
+    content: ""
+}
+
+.bet-mic:before {
+    content: ""
+}
+
+.bet-mute:before {
+    content: ""
+}
+
+.bet-shield:before {
+    content: ""
+}
+
+.bet-calendar-empty:before {
+    content: ""
+}
+
+.bet-extinguisher:before {
+    content: ""
+}
+
+.bet-rocket:before {
+    content: ""
+}
+
+.bet-maxcdn:before {
+    content: ""
+}
+
+.bet-angle-circled-left:before {
+    content: ""
+}
+
+.bet-angle-circled-right:before {
+    content: ""
+}
+
+.bet-angle-circled-up:before {
+    content: ""
+}
+
+.bet-angle-circled-down:before {
+    content: ""
+}
+
+.bet-html5:before {
+    content: ""
+}
+
+.bet-css3:before {
+    content: ""
+}
+
+.bet-anchor:before {
+    content: ""
+}
+
+.bet-lock-open-alt:before {
+    content: ""
+}
+
+.bet-bullseye:before {
+    content: ""
+}
+
+.bet-ellipsis:before {
+    content: ""
+}
+
+.bet-ellipsis-vert:before {
+    content: ""
+}
+
+.bet-rss-squared:before {
+    content: ""
+}
+
+.bet-play-circled:before {
+    content: ""
+}
+
+.bet-ticket:before {
+    content: ""
+}
+
+.bet-minus-squared:before {
+    content: ""
+}
+
+.bet-minus-squared-alt:before {
+    content: ""
+}
+
+.bet-level-up:before {
+    content: ""
+}
+
+.bet-level-down:before {
+    content: ""
+}
+
+.bet-ok-squared:before {
+    content: ""
+}
+
+.bet-pencil-squared:before {
+    content: ""
+}
+
+.bet-link-ext-alt:before {
+    content: ""
+}
+
+.bet-export-alt:before {
+    content: ""
+}
+
+.bet-compass:before {
+    content: ""
+}
+
+.bet-expand:before {
+    content: ""
+}
+
+.bet-collapse:before {
+    content: ""
+}
+
+.bet-expand-right:before {
+    content: ""
+}
+
+.bet-eur:before,
+.bet-EUR:before,
+.bet-euro:before {
+    content: ""
+}
+
+.bet-gbp:before,
+.bet-GBP:before,
+.bet-pound:before {
+    content: ""
+}
+
+.bet-dollar:before,
+.bet-usd:before,
+.bet-USD:before {
+    content: ""
+}
+
+.bet-rupee:before {
+    content: ""
+}
+
+.bet-yen:before {
+    content: ""
+}
+
+.bet-rouble:before {
+    content: ""
+}
+
+.bet-won:before {
+    content: ""
+}
+
+.bet-bitcoin:before {
+    content: ""
+}
+
+.bet-doc-inv:before {
+    content: ""
+}
+
+.bet-doc-text-inv:before {
+    content: ""
+}
+
+.bet-sort-name-up:before {
+    content: ""
+}
+
+.bet-sort-name-down:before {
+    content: ""
+}
+
+.bet-sort-alt-up:before {
+    content: ""
+}
+
+.bet-sort-alt-down:before {
+    content: ""
+}
+
+.bet-sort-number-up:before {
+    content: ""
+}
+
+.bet-sort-number-down:before {
+    content: ""
+}
+
+.bet-thumbs-up-alt:before {
+    content: ""
+}
+
+.bet-thumbs-down-alt:before {
+    content: ""
+}
+
+.bet-youtube-squared:before {
+    content: ""
+}
+
+.bet-youtube:before {
+    content: ""
+}
+
+.bet-xing:before {
+    content: ""
+}
+
+.bet-xing-squared:before {
+    content: ""
+}
+
+.bet-youtube-play:before {
+    content: ""
+}
+
+.bet-dropbox:before {
+    content: ""
+}
+
+.bet-stackoverflow:before {
+    content: ""
+}
+
+.bet-instagram:before {
+    content: ""
+}
+
+.bet-flickr:before {
+    content: ""
+}
+
+.bet-adn:before {
+    content: ""
+}
+
+.bet-bitbucket:before {
+    content: ""
+}
+
+.bet-bitbucket-squared:before {
+    content: ""
+}
+
+.bet-tumblr:before {
+    content: ""
+}
+
+.bet-tumblr-squared:before {
+    content: ""
+}
+
+.bet-down:before {
+    content: ""
+}
+
+.bet-up:before {
+    content: ""
+}
+
+.bet-left:before {
+    content: ""
+}
+
+.bet-right:before {
+    content: ""
+}
+
+.bet-apple:before {
+    content: ""
+}
+
+.bet-windows:before {
+    content: ""
+}
+
+.bet-android:before {
+    content: ""
+}
+
+.bet-linux:before {
+    content: ""
+}
+
+.bet-dribbble:before {
+    content: ""
+}
+
+.bet-skype:before {
+    content: ""
+}
+
+.bet-foursquare:before {
+    content: ""
+}
+
+.bet-trello:before {
+    content: ""
+}
+
+.bet-female:before {
+    content: ""
+}
+
+.bet-male:before {
+    content: ""
+}
+
+.bet-gittip:before {
+    content: ""
+}
+
+.bet-sun:before {
+    content: ""
+}
+
+.bet-moon:before {
+    content: ""
+}
+
+.bet-box:before {
+    content: ""
+}
+
+.bet-bug:before {
+    content: ""
+}
+
+.bet-vkontakte:before {
+    content: ""
+}
+
+.bet-weibo:before {
+    content: ""
+}
+
+.bet-renren:before {
+    content: ""
+}
+
+.bet-pagelines:before {
+    content: ""
+}
+
+.bet-stackexchange:before {
+    content: ""
+}
+
+.bet-right-circled2:before {
+    content: ""
+}
+
+.bet-left-circled2:before {
+    content: ""
+}
+
+.bet-collapse-left:before {
+    content: ""
+}
+
+.bet-dot-circled:before {
+    content: ""
+}
+
+.bet-wheelchair:before {
+    content: ""
+}
+
+.bet-vimeo-squared:before {
+    content: ""
+}
+
+.bet-try:before,
+.bet-TRY:before {
+    content: ""
+}
+
+.bet-plus-squared-alt:before {
+    content: ""
+}
+
+.bet-space-shuttle:before {
+    content: ""
+}
+
+.bet-slack:before {
+    content: ""
+}
+
+.bet-mail-squared:before {
+    content: ""
+}
+
+.bet-wordpress:before {
+    content: ""
+}
+
+.bet-openid:before {
+    content: ""
+}
+
+.bet-bank:before {
+    content: ""
+}
+
+.bet-graduation-cap:before {
+    content: ""
+}
+
+.bet-yahoo:before {
+    content: ""
+}
+
+.bet-google:before {
+    content: ""
+}
+
+.bet-reddit:before {
+    content: ""
+}
+
+.bet-reddit-squared:before {
+    content: ""
+}
+
+.bet-stumbleupon-circled:before {
+    content: ""
+}
+
+.bet-stumbleupon:before {
+    content: ""
+}
+
+.bet-delicious:before {
+    content: ""
+}
+
+.bet-digg:before {
+    content: ""
+}
+
+.bet-pied-piper-squared:before {
+    content: ""
+}
+
+.bet-pied-piper-alt:before {
+    content: ""
+}
+
+.bet-drupal:before {
+    content: ""
+}
+
+.bet-joomla:before {
+    content: ""
+}
+
+.bet-language:before {
+    content: ""
+}
+
+.bet-fax:before {
+    content: ""
+}
+
+.bet-building-filled:before {
+    content: ""
+}
+
+.bet-child:before {
+    content: ""
+}
+
+.bet-paw:before {
+    content: ""
+}
+
+.bet-spoon:before {
+    content: ""
+}
+
+.bet-cube:before {
+    content: ""
+}
+
+.bet-cubes:before {
+    content: ""
+}
+
+.bet-behance:before {
+    content: ""
+}
+
+.bet-behance-squared:before {
+    content: ""
+}
+
+.bet-steam:before {
+    content: ""
+}
+
+.bet-steam-squared:before {
+    content: ""
+}
+
+.bet-recycle:before {
+    content: ""
+}
+
+.bet-cab:before {
+    content: ""
+}
+
+.bet-taxi:before {
+    content: ""
+}
+
+.bet-tree:before {
+    content: ""
+}
+
+.bet-spotify:before {
+    content: ""
+}
+
+.bet-deviantart:before {
+    content: ""
+}
+
+.bet-soundcloud:before {
+    content: ""
+}
+
+.bet-database:before {
+    content: ""
+}
+
+.bet-file-pdf:before {
+    content: ""
+}
+
+.bet-file-word:before {
+    content: ""
+}
+
+.bet-file-excel:before {
+    content: ""
+}
+
+.bet-file-powerpoint:before {
+    content: ""
+}
+
+.bet-file-image:before {
+    content: ""
+}
+
+.bet-file-archive:before {
+    content: ""
+}
+
+.bet-file-audio:before {
+    content: ""
+}
+
+.bet-file-video:before {
+    content: ""
+}
+
+.bet-file-code:before {
+    content: ""
+}
+
+.bet-vine:before {
+    content: ""
+}
+
+.bet-codeopen:before {
+    content: ""
+}
+
+.bet-jsfiddle:before {
+    content: ""
+}
+
+.bet-lifebuoy:before {
+    content: ""
+}
+
+.bet-circle-notch:before {
+    content: ""
+}
+
+.bet-rebel:before {
+    content: ""
+}
+
+.bet-empire:before {
+    content: ""
+}
+
+.bet-git-squared:before {
+    content: ""
+}
+
+.bet-git:before {
+    content: ""
+}
+
+.bet-hacker-news:before {
+    content: ""
+}
+
+.bet-tencent-weibo:before {
+    content: ""
+}
+
+.bet-qq:before {
+    content: ""
+}
+
+.bet-wechat:before {
+    content: ""
+}
+
+.bet-paper-plane:before {
+    content: ""
+}
+
+.bet-paper-plane-empty:before {
+    content: ""
+}
+
+.bet-history:before {
+    content: ""
+}
+
+.bet-circle-thin:before {
+    content: ""
+}
+
+.bet-header:before {
+    content: ""
+}
+
+.bet-paragraph:before {
+    content: ""
+}
+
+.bet-sliders:before {
+    content: ""
+}
+
+.bet-share:before {
+    content: ""
+}
+
+.bet-share-squared:before {
+    content: ""
+}
+
+.bet-bomb:before {
+    content: ""
+}
+
+.bet-soccer-ball:before {
+    content: ""
+}
+
+.bet-tty:before {
+    content: ""
+}
+
+.bet-binoculars:before {
+    content: ""
+}
+
+.bet-plug:before {
+    content: ""
+}
+
+.bet-slideshare:before {
+    content: ""
+}
+
+.bet-twitch:before {
+    content: ""
+}
+
+.bet-yelp:before {
+    content: ""
+}
+
+.bet-newspaper:before {
+    content: ""
+}
+
+.bet-wifi:before {
+    content: ""
+}
+
+.bet-calc:before {
+    content: ""
+}
+
+.bet-paypal:before {
+    content: ""
+}
+
+.bet-gwallet:before {
+    content: ""
+}
+
+.bet-cc-visa:before {
+    content: ""
+}
+
+.bet-cc-mastercard:before {
+    content: ""
+}
+
+.bet-cc-discover:before {
+    content: ""
+}
+
+.bet-cc-amex:before {
+    content: ""
+}
+
+.bet-cc-paypal:before {
+    content: ""
+}
+
+.bet-cc-stripe:before {
+    content: ""
+}
+
+.bet-bell-off:before {
+    content: ""
+}
+
+.bet-bell-off-empty:before {
+    content: ""
+}
+
+.bet-trash:before {
+    content: ""
+}
+
+.bet-copyright:before {
+    content: ""
+}
+
+.bet-at:before {
+    content: ""
+}
+
+.bet-eyedropper:before {
+    content: ""
+}
+
+.bet-brush:before {
+    content: ""
+}
+
+.bet-birthday:before {
+    content: ""
+}
+
+.bet-chart-area:before {
+    content: ""
+}
+
+.bet-chart-pie:before {
+    content: ""
+}
+
+.bet-chart-line:before {
+    content: ""
+}
+
+.bet-lastfm:before {
+    content: ""
+}
+
+.bet-lastfm-squared:before {
+    content: ""
+}
+
+.bet-toggle-off:before {
+    content: ""
+}
+
+.bet-toggle-on:before {
+    content: ""
+}
+
+.bet-bicycle:before {
+    content: ""
+}
+
+.bet-bus:before {
+    content: ""
+}
+
+.bet-ioxhost:before {
+    content: ""
+}
+
+.bet-angellist:before {
+    content: ""
+}
+
+.bet-cc:before {
+    content: ""
+}
+
+.bet-shekel:before {
+    content: ""
+}
+
+.bet-meanpath:before {
+    content: ""
+}
+
+.bet-buysellads:before {
+    content: ""
+}
+
+.bet-connectdevelop:before {
+    content: ""
+}
+
+.bet-dashcube:before {
+    content: ""
+}
+
+.bet-forumbee:before {
+    content: ""
+}
+
+.bet-leanpub:before {
+    content: ""
+}
+
+.bet-sellsy:before {
+    content: ""
+}
+
+.bet-shirtsinbulk:before {
+    content: ""
+}
+
+.bet-simplybuilt:before {
+    content: ""
+}
+
+.bet-skyatlas:before {
+    content: ""
+}
+
+.bet-cart-plus:before {
+    content: ""
+}
+
+.bet-cart-arrow-down:before {
+    content: ""
+}
+
+.bet-diamond:before {
+    content: ""
+}
+
+.bet-ship:before {
+    content: ""
+}
+
+.bet-user-secret:before {
+    content: ""
+}
+
+.bet-motorcycle:before {
+    content: ""
+}
+
+.bet-street-view:before {
+    content: ""
+}
+
+.bet-heartbeat:before {
+    content: ""
+}
+
+.bet-venus:before {
+    content: ""
+}
+
+.bet-mars:before {
+    content: ""
+}
+
+.bet-mercury:before {
+    content: ""
+}
+
+.bet-transgender:before {
+    content: ""
+}
+
+.bet-transgender-alt:before {
+    content: ""
+}
+
+.bet-venus-double:before {
+    content: ""
+}
+
+.bet-mars-double:before {
+    content: ""
+}
+
+.bet-venus-mars:before {
+    content: ""
+}
+
+.bet-mars-stroke:before {
+    content: ""
+}
+
+.bet-mars-stroke-v:before {
+    content: ""
+}
+
+.bet-mars-stroke-h:before {
+    content: ""
+}
+
+.bet-neuter:before {
+    content: ""
+}
+
+.bet-genderless:before {
+    content: ""
+}
+
+.bet-facebook-official:before {
+    content: ""
+}
+
+.bet-pinterest:before {
+    content: ""
+}
+
+.bet-whatsapp:before {
+    content: ""
+}
+
+.bet-server:before {
+    content: ""
+}
+
+.bet-user-plus:before {
+    content: ""
+}
+
+.bet-user-times:before {
+    content: ""
+}
+
+.bet-bed:before {
+    content: ""
+}
+
+.bet-viacoin:before {
+    content: ""
+}
+
+.bet-train:before {
+    content: ""
+}
+
+.bet-subway:before {
+    content: ""
+}
+
+.bet-medium:before {
+    content: ""
+}
+
+.bet-y-combinator:before {
+    content: ""
+}
+
+.bet-optin-monster:before {
+    content: ""
+}
+
+.bet-opencart:before {
+    content: ""
+}
+
+.bet-expeditedssl:before {
+    content: ""
+}
+
+.bet-battery-4:before {
+    content: ""
+}
+
+.bet-battery-3:before {
+    content: ""
+}
+
+.bet-battery-2:before {
+    content: ""
+}
+
+.bet-battery-1:before {
+    content: ""
+}
+
+.bet-battery-0:before {
+    content: ""
+}
+
+.bet-mouse-pointer:before {
+    content: ""
+}
+
+.bet-i-cursor:before {
+    content: ""
+}
+
+.bet-object-group:before {
+    content: ""
+}
+
+.bet-object-ungroup:before {
+    content: ""
+}
+
+.bet-sticky-note:before {
+    content: ""
+}
+
+.bet-sticky-note-o:before {
+    content: ""
+}
+
+.bet-cc-jcb:before {
+    content: ""
+}
+
+.bet-cc-diners-club:before {
+    content: ""
+}
+
+.bet-clone:before {
+    content: ""
+}
+
+.bet-balance-scale:before {
+    content: ""
+}
+
+.bet-hourglass-o:before {
+    content: ""
+}
+
+.bet-hourglass-1:before {
+    content: ""
+}
+
+.bet-hourglass-2:before {
+    content: ""
+}
+
+.bet-hourglass-3:before {
+    content: ""
+}
+
+.bet-hourglass:before {
+    content: ""
+}
+
+.bet-hand-grab-o:before {
+    content: ""
+}
+
+.bet-hand-paper-o:before {
+    content: ""
+}
+
+.bet-hand-scissors-o:before {
+    content: ""
+}
+
+.bet-hand-lizard-o:before {
+    content: ""
+}
+
+.bet-hand-spock-o:before {
+    content: ""
+}
+
+.bet-hand-pointer-o:before {
+    content: ""
+}
+
+.bet-hand-peace-o:before {
+    content: ""
+}
+
+.bet-trademark:before {
+    content: ""
+}
+
+.bet-registered:before {
+    content: ""
+}
+
+.bet-creative-commons:before {
+    content: ""
+}
+
+.bet-gg:before {
+    content: ""
+}
+
+.bet-gg-circle:before {
+    content: ""
+}
+
+.bet-tripadvisor:before {
+    content: ""
+}
+
+.bet-odnoklassniki:before {
+    content: ""
+}
+
+.bet-odnoklassniki-square:before {
+    content: ""
+}
+
+.bet-get-pocket:before {
+    content: ""
+}
+
+.bet-wikipedia-w:before {
+    content: ""
+}
+
+.bet-safari:before {
+    content: ""
+}
+
+.bet-chrome:before {
+    content: ""
+}
+
+.bet-firefox:before {
+    content: ""
+}
+
+.bet-opera:before {
+    content: ""
+}
+
+.bet-internet-explorer:before {
+    content: ""
+}
+
+.bet-television:before {
+    content: ""
+}
+
+.bet-contao:before {
+    content: ""
+}
+
+.bet-500px:before {
+    content: ""
+}
+
+.bet-amazon:before {
+    content: ""
+}
+
+.bet-calendar-plus-o:before {
+    content: ""
+}
+
+.bet-calendar-minus-o:before {
+    content: ""
+}
+
+.bet-calendar-times-o:before {
+    content: ""
+}
+
+.bet-calendar-check-o:before {
+    content: ""
+}
+
+.bet-industry:before {
+    content: ""
+}
+
+.bet-map-pin:before {
+    content: ""
+}
+
+.bet-map-signs:before {
+    content: ""
+}
+
+.bet-map-o:before {
+    content: ""
+}
+
+.bet-map:before {
+    content: ""
+}
+
+.bet-commenting:before {
+    content: ""
+}
+
+.bet-commenting-o:before {
+    content: ""
+}
+
+.bet-houzz:before {
+    content: ""
+}
+
+.bet-vimeo:before {
+    content: ""
+}
+
+.bet-black-tie:before {
+    content: ""
+}
+
+.bet-fonticons:before {
+    content: ""
+}
+
+.bet-reddit-alien:before {
+    content: ""
+}
+
+.bet-edge:before {
+    content: ""
+}
+
+.bet-credit-card-alt:before {
+    content: ""
+}
+
+.bet-codiepie:before {
+    content: ""
+}
+
+.bet-modx:before {
+    content: ""
+}
+
+.bet-fort-awesome:before {
+    content: ""
+}
+
+.bet-usb:before {
+    content: ""
+}
+
+.bet-product-hunt:before {
+    content: ""
+}
+
+.bet-mixcloud:before {
+    content: ""
+}
+
+.bet-scribd:before {
+    content: ""
+}
+
+.bet-pause-circle:before {
+    content: ""
+}
+
+.bet-pause-circle-o:before {
+    content: ""
+}
+
+.bet-stop-circle:before {
+    content: ""
+}
+
+.bet-stop-circle-o:before {
+    content: ""
+}
+
+.bet-shopping-bag:before {
+    content: ""
+}
+
+.bet-shopping-basket:before {
+    content: ""
+}
+
+.bet-hashtag:before {
+    content: ""
+}
+
+.bet-bluetooth:before {
+    content: ""
+}
+
+.bet-bluetooth-b:before {
+    content: ""
+}
+
+.bet-percent:before {
+    content: ""
+}
+
+.bet-gitlab:before {
+    content: ""
+}
+
+.bet-wpbeginner:before {
+    content: ""
+}
+
+.bet-wpforms:before {
+    content: ""
+}
+
+.bet-envira:before {
+    content: ""
+}
+
+.bet-universal-access:before {
+    content: ""
+}
+
+.bet-wheelchair-alt:before {
+    content: ""
+}
+
+.bet-question-circle-o:before {
+    content: ""
+}
+
+.bet-blind:before {
+    content: ""
+}
+
+.bet-audio-description:before {
+    content: ""
+}
+
+.bet-volume-control-phone:before {
+    content: ""
+}
+
+.bet-braille:before {
+    content: ""
+}
+
+.bet-assistive-listening-systems:before {
+    content: ""
+}
+
+.bet-american-sign-language-interpreting:before {
+    content: ""
+}
+
+.bet-asl-interpreting:before {
+    content: ""
+}
+
+.bet-glide:before {
+    content: ""
+}
+
+.bet-glide-g:before {
+    content: ""
+}
+
+.bet-sign-language:before {
+    content: ""
+}
+
+.bet-low-vision:before {
+    content: ""
+}
+
+.bet-viadeo:before {
+    content: ""
+}
+
+.bet-viadeo-square:before {
+    content: ""
+}
+
+.bet-snapchat:before {
+    content: ""
+}
+
+.bet-snapchat-ghost:before {
+    content: ""
+}
+
+.bet-snapchat-square:before {
+    content: ""
+}
+
+.bet-pied-piper:before {
+    content: ""
+}
+
+.bet-first-order:before {
+    content: ""
+}
+
+.bet-yoast:before {
+    content: ""
+}
+
+.bet-themeisle:before {
+    content: ""
+}
+
+.bet-google-plus-circle:before {
+    content: ""
+}
+
+.bet-font-awesome:before {
+    content: ""
+}
+
+.bet-handshake-o:before {
+    content: ""
+}
+
+.bet-envelope-open:before {
+    content: ""
+}
+
+.bet-envelope-open-o:before {
+    content: ""
+}
+
+.bet-linode:before {
+    content: ""
+}
+
+.bet-address-book:before {
+    content: ""
+}
+
+.bet-address-book-o:before {
+    content: ""
+}
+
+.bet-address-card:before {
+    content: ""
+}
+
+.bet-address-card-o:before {
+    content: ""
+}
+
+.bet-user-circle:before {
+    content: ""
+}
+
+.bet-user-circle-o:before {
+    content: ""
+}
+
+.bet-user-o:before {
+    content: ""
+}
+
+.bet-id-badge:before {
+    content: ""
+}
+
+.bet-id-card:before {
+    content: ""
+}
+
+.bet-id-card-o:before {
+    content: ""
+}
+
+.bet-quora:before {
+    content: ""
+}
+
+.bet-free-code-camp:before {
+    content: ""
+}
+
+.bet-telegram:before {
+    content: ""
+}
+
+.bet-thermometer:before {
+    content: ""
+}
+
+.bet-thermometer-3:before {
+    content: ""
+}
+
+.bet-thermometer-2:before {
+    content: ""
+}
+
+.bet-thermometer-quarter:before {
+    content: ""
+}
+
+.bet-thermometer-0:before {
+    content: ""
+}
+
+.bet-shower:before {
+    content: ""
+}
+
+.bet-bath:before {
+    content: ""
+}
+
+.bet-podcast:before {
+    content: ""
+}
+
+.bet-window-maximize:before {
+    content: ""
+}
+
+.bet-window-minimize:before {
+    content: ""
+}
+
+.bet-window-restore:before {
+    content: ""
+}
+
+.bet-window-close:before {
+    content: ""
+}
+
+.bet-window-close-o:before {
+    content: ""
+}
+
+.bet-bandcamp:before {
+    content: ""
+}
+
+.bet-grav:before {
+    content: ""
+}
+
+.bet-etsy:before {
+    content: ""
+}
+
+.bet-imdb:before {
+    content: ""
+}
+
+.bet-ravelry:before {
+    content: ""
+}
+
+.bet-eercast:before {
+    content: ""
+}
+
+.bet-microchip:before {
+    content: ""
+}
+
+.bet-snowflake-o:before {
+    content: ""
+}
+
+.bet-superpowers:before {
+    content: ""
+}
+
+.bet-wpexplorer:before {
+    content: ""
+}
+
+.bet-meetup:before {
+    content: ""
+}
+
+.bet-github-squared:before {
+    content: ""
+}
+
+.bet-twitter-squared:before {
+    content: ""
+}
+
+.bet-facebook-squared:before {
+    content: ""
+}
+
+.bet-linkedin-squared:before {
+    content: ""
+}
+
+.bet-spinner2:before {
+    content: ""
+}
+
+.bet-stats:before {
+    content: ""
+}
+
+.bet-playtv:before {
+    content: ""
+}
+
+.bet-stadium:before {
+    content: ""
+}
+
+.bet-goalrss:before {
+    content: ""
+}
+
+.flag {
+    width: 1em;
+    margin-left: .2em;
+    margin-right: .2em;
+    padding: 0 10px;
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing: antialiased
+}
+
+.ethiopia {
+    background-image: url(https://betorder162.com/assets/img/flags/ethiopia.svg)
+}
+
+.oman {
+    background-image: url(https://betorder162.com/assets/img/flags/oman.svg)
+}
+
+.tanzania {
+    background-image: url(https://betorder162.com/assets/img/flags/tanzania.svg)
+}
+
+.slovenia {
+    background-image: url(https://betorder162.com/assets/img/flags/slovenia.svg)
+}
+
+.puerto-rico {
+    background-image: url(https://betorder162.com/assets/img/flags/puerto-rico.svg)
+}
+
+.mozambique {
+    background-image: url(https://betorder162.com/assets/img/flags/mozambique.svg)
+}
+
+.iraq {
+    background-image: url(https://betorder162.com/assets/img/flags/iraq.svg)
+}
+
+.lebanon {
+    background-image: url(https://betorder162.com/assets/img/flags/lebanon.svg)
+}
+
+.uganda {
+    background-image: url(https://betorder162.com/assets/img/flags/uganda.svg)
+}
+
+.nigeria {
+    background-image: url(https://betorder162.com/assets/img/flags/nigeria.svg)
+}
+
+.italy {
+    background-image: url(https://betorder162.com/assets/img/flags/italy.svg)
+}
+
+.malta {
+    background-image: url(https://betorder162.com/assets/img/flags/malta.svg)
+}
+
+.tunisia {
+    background-image: url(https://betorder162.com/assets/img/flags/tunisia.svg)
+}
+
+.nicaragua {
+    background-image: url(https://betorder162.com/assets/img/flags/nicaragua.svg)
+}
+
+.el-salvador {
+    background-image: url(https://betorder162.com/assets/img/flags/el-salvador.svg)
+}
+
+.zambia {
+    background-image: url(https://betorder162.com/assets/img/flags/zambia.svg)
+}
+
+.wales {
+    background-image: url(https://betorder162.com/assets/img/flags/wales.svg)
+}
+
+.dominican-republic {
+    background-image: url(https://betorder162.com/assets/img/flags/dominican-republic.svg)
+}
+
+.qatar {
+    background-image: url(https://betorder162.com/assets/img/flags/qatar.svg)
+}
+
+.namibia {
+    background-image: url(https://betorder162.com/assets/img/flags/namibia.svg)
+}
+
+.mauritius {
+    background-image: url(https://betorder162.com/assets/img/flags/mauritius.svg)
+}
+
+.luxembourg {
+    background-image: url(https://betorder162.com/assets/img/flags/luxembourg.svg)
+}
+
+.lithuania {
+    background-image: url(https://betorder162.com/assets/img/flags/lithuania.svg)
+}
+
+.jamaica {
+    background-image: url(https://betorder162.com/assets/img/flags/jamaica.svg)
+}
+
+.honduras {
+    background-image: url(https://betorder162.com/assets/img/flags/honduras.svg)
+}
+
+.myanmar {
+    background-image: url(https://betorder162.com/assets/img/flags/myanmar.svg)
+}
+
+.kenya {
+    background-image: url(https://betorder162.com/assets/img/flags/kenya.svg)
+}
+
+.cyprus {
+    background-image: url(https://betorder162.com/assets/img/flags/cyprus.svg)
+}
+
+.pakistan {
+    background-image: url(https://betorder162.com/assets/img/flags/pakistan.svg)
+}
+
+.latvia {
+    background-image: url(https://betorder162.com/assets/img/flags/latvia.svg)
+}
+
+.japan {
+    background-image: url(https://betorder162.com/assets/img/flags/japan.svg)
+}
+
+.kazakhstan {
+    background-image: url(https://betorder162.com/assets/img/flags/kazakhstan.svg)
+}
+
+.serbia {
+    background-image: url(https://betorder162.com/assets/img/flags/serbia.svg)
+}
+
+.scotland {
+    background-image: url(https://betorder162.com/assets/img/flags/scotland.svg)
+}
+
+.north-korea {
+    background-image: url(https://betorder162.com/assets/img/flags/north-korea.svg)
+}
+
+.uruguay {
+    background-image: url(https://betorder162.com/assets/img/flags/uruguay.svg)
+}
+
+.syria {
+    background-image: url(https://betorder162.com/assets/img/flags/syria.svg)
+}
+
+.guatemala {
+    background-image: url(https://betorder162.com/assets/img/flags/guatemala.svg)
+}
+
+.iceland {
+    background-image: url(https://betorder162.com/assets/img/flags/iceland.svg)
+}
+
+.jordan {
+    background-image: url(https://betorder162.com/assets/img/flags/jordan.svg)
+}
+
+.monaco {
+    background-image: url(https://betorder162.com/assets/img/flags/monaco.svg)
+}
+
+.spain {
+    background-image: url(https://betorder162.com/assets/img/flags/spain.svg)
+}
+
+.slovakia {
+    background-image: url(https://betorder162.com/assets/img/flags/slovakia.svg)
+}
+
+.panama {
+    background-image: url(https://betorder162.com/assets/img/flags/panama.svg)
+}
+
+.new-zealand {
+    background-image: url(https://betorder162.com/assets/img/flags/new-zealand.svg)
+}
+
+.ecuador {
+    background-image: url(https://betorder162.com/assets/img/flags/ecuador.svg)
+}
+
+.romania {
+    background-image: url(https://betorder162.com/assets/img/flags/romania.svg)
+}
+
+.chile {
+    background-image: url(https://betorder162.com/assets/img/flags/chile.svg)
+}
+
+.finland {
+    background-image: url(https://betorder162.com/assets/img/flags/finland.svg)
+}
+
+.hungary {
+    background-image: url(https://betorder162.com/assets/img/flags/hungary.svg)
+}
+
+.belgium {
+    background-image: url(https://betorder162.com/assets/img/flags/belgium.svg)
+}
+
+.south-korea {
+    background-image: url(https://betorder162.com/assets/img/flags/south-korea.svg)
+}
+
+.malaysia {
+    background-image: url(https://betorder162.com/assets/img/flags/malaysia.svg)
+}
+
+.venezuela {
+    background-image: url(https://betorder162.com/assets/img/flags/venezuela.svg)
+}
+
+.norway {
+    background-image: url(https://betorder162.com/assets/img/flags/norway.svg)
+}
+
+.saudi-arabia {
+    background-image: url(https://betorder162.com/assets/img/flags/saudi-arabia.svg)
+}
+
+.israel {
+    background-image: url(https://betorder162.com/assets/img/flags/israel.svg)
+}
+
+.czech-republic {
+    background-image: url(https://betorder162.com/assets/img/flags/czech-republic.svg)
+}
+
+.colombia {
+    background-image: url(https://betorder162.com/assets/img/flags/colombia.svg)
+}
+
+.iran {
+    background-image: url(https://betorder162.com/assets/img/flags/iran.svg)
+}
+
+.argentina {
+    background-image: url(https://betorder162.com/assets/img/flags/argentina.svg)
+}
+
+.ukraine {
+    background-image: url(https://betorder162.com/assets/img/flags/ukraine.svg)
+}
+
+.germany {
+    background-image: url(https://betorder162.com/assets/img/flags/germany.svg)
+}
+
+.hong-kong {
+    background-image: url(https://betorder162.com/assets/img/flags/hong-kong.svg)
+}
+
+.united-arab-emirates {
+    background-image: url(https://betorder162.com/assets/img/flags/united-arab-emirates.svg)
+}
+
+.laos {
+    background-image: url(https://betorder162.com/assets/img/flags/laos.svg)
+}
+
+.ireland {
+    background-image: url(https://betorder162.com/assets/img/flags/ireland.svg)
+}
+
+.greece {
+    background-image: url(https://betorder162.com/assets/img/flags/greece.svg)
+}
+
+.denmark {
+    background-image: url(https://betorder162.com/assets/img/flags/denmark.svg)
+}
+
+.sweden {
+    background-image: url(https://betorder162.com/assets/img/flags/sweden.svg)
+}
+
+.peru {
+    background-image: url(https://betorder162.com/assets/img/flags/peru.svg)
+}
+
+.south-africa {
+    background-image: url(https://betorder162.com/assets/img/flags/south-africa.svg)
+}
+
+.philippines {
+    background-image: url(https://betorder162.com/assets/img/flags/philippines.svg)
+}
+
+.france {
+    background-image: url(https://betorder162.com/assets/img/flags/france.svg)
+}
+
+.indonesia {
+    background-image: url(https://betorder162.com/assets/img/flags/indonesia.svg)
+}
+
+.egypt {
+    background-image: url(https://betorder162.com/assets/img/flags/egypt.svg)
+}
+
+.taiwan {
+    background-image: url(https://betorder162.com/assets/img/flags/taiwan.svg)
+}
+
+.cook-islands {
+    background-image: url(https://betorder162.com/assets/img/flags/cook-islands.svg)
+}
+
+.cocos-island {
+    background-image: url(https://betorder162.com/assets/img/flags/cocos-island.svg)
+}
+
+.christmas-island {
+    background-image: url(https://betorder162.com/assets/img/flags/christmas-island.svg)
+}
+
+.american-samoa {
+    background-image: url(https://betorder162.com/assets/img/flags/american-samoa.svg)
+}
+
+.morocco {
+    background-image: url(https://betorder162.com/assets/img/flags/morocco.svg)
+}
+
+.anguilla {
+    background-image: url(https://betorder162.com/assets/img/flags/anguilla.svg)
+}
+
+.comoros {
+    background-image: url(https://betorder162.com/assets/img/flags/comoros.svg)
+}
+
+.central-african-republic {
+    background-image: url(https://betorder162.com/assets/img/flags/central-african-republic.svg)
+}
+
+.cayman-islands {
+    background-image: url(https://betorder162.com/assets/img/flags/cayman-islands.svg)
+}
+
+.british-indian-ocean-territory {
+    background-image: url(https://betorder162.com/assets/img/flags/british-indian-ocean-territory.svg)
+}
+
+.bhutan {
+    background-image: url(https://betorder162.com/assets/img/flags/bhutan.svg)
+}
+
+.chad {
+    background-image: url(https://betorder162.com/assets/img/flags/chad.svg)
+}
+
+.cape-verde {
+    background-image: url(https://betorder162.com/assets/img/flags/cape-verde.svg)
+}
+
+.switzerland {
+    background-image: url(https://betorder162.com/assets/img/flags/switzerland.svg)
+}
+
+.benin {
+    background-image: url(https://betorder162.com/assets/img/flags/benin.svg)
+}
+
+.aruba {
+    background-image: url(https://betorder162.com/assets/img/flags/aruba.svg)
+}
+
+.andorra {
+    background-image: url(https://betorder162.com/assets/img/flags/andorra.svg)
+}
+
+.burundi {
+    background-image: url(https://betorder162.com/assets/img/flags/burundi.svg)
+}
+
+.antigua-and-barbuda {
+    background-image: url(https://betorder162.com/assets/img/flags/antigua-and-barbuda.svg)
+}
+
+.cameroon {
+    background-image: url(https://betorder162.com/assets/img/flags/cameroon.svg)
+}
+
+.brunei {
+    background-image: url(https://betorder162.com/assets/img/flags/brunei.svg)
+}
+
+.poland {
+    background-image: url(https://betorder162.com/assets/img/flags/poland.svg)
+}
+
+.bonaire {
+    background-image: url(https://betorder162.com/assets/img/flags/bonaire.svg)
+}
+
+.belarus {
+    background-image: url(https://betorder162.com/assets/img/flags/belarus.svg)
+}
+
+.barbados {
+    background-image: url(https://betorder162.com/assets/img/flags/barbados.svg)
+}
+
+.british-virgin-islands {
+    background-image: url(https://betorder162.com/assets/img/flags/british-virgin-islands.svg)
+}
+
+.bosnia-and-herzegovina {
+    background-image: url(https://betorder162.com/assets/img/flags/bosnia-and-herzegovina.svg)
+}
+
+.bermuda {
+    background-image: url(https://betorder162.com/assets/img/flags/bermuda.svg)
+}
+
+.belize {
+    background-image: url(https://betorder162.com/assets/img/flags/belize.svg)
+}
+
+.bahrain {
+    background-image: url(https://betorder162.com/assets/img/flags/bahrain.svg)
+}
+
+.albania {
+    background-image: url(https://betorder162.com/assets/img/flags/albania.svg)
+}
+
+.burkina-faso {
+    background-image: url(https://betorder162.com/assets/img/flags/burkina-faso.svg)
+}
+
+.turkey {
+    background-image: url(https://betorder162.com/assets/img/flags/turkey.svg)
+}
+
+.armenia {
+    background-image: url(https://betorder162.com/assets/img/flags/armenia.svg)
+}
+
+.afghanistan {
+    background-image: url(https://betorder162.com/assets/img/flags/afghanistan.svg)
+}
+
+.angola {
+    background-image: url(https://betorder162.com/assets/img/flags/angola.svg)
+}
+
+.azerbaijan {
+    background-image: url(https://betorder162.com/assets/img/flags/azerbaijan.svg)
+}
+
+.algeria {
+    background-image: url(https://betorder162.com/assets/img/flags/algeria.svg)
+}
+
+.botswana {
+    background-image: url(https://betorder162.com/assets/img/flags/botswana.svg)
+}
+
+.bangladesh {
+    background-image: url(https://betorder162.com/assets/img/flags/bangladesh.svg)
+}
+
+.cuba {
+    background-image: url(https://betorder162.com/assets/img/flags/cuba.svg)
+}
+
+.australia {
+    background-image: url(https://betorder162.com/assets/img/flags/australia.svg)
+}
+
+.costa-rica {
+    background-image: url(https://betorder162.com/assets/img/flags/costa-rica.svg)
+}
+
+.cambodia {
+    background-image: url(https://betorder162.com/assets/img/flags/cambodia.svg)
+}
+
+.bolivia {
+    background-image: url(https://betorder162.com/assets/img/flags/bolivia.svg)
+}
+
+.croatia {
+    background-image: url(https://betorder162.com/assets/img/flags/croatia.svg)
+}
+
+.bulgaria {
+    background-image: url(https://betorder162.com/assets/img/flags/bulgaria.svg)
+}
+
+.martinique {
+    background-image: url(https://betorder162.com/assets/img/flags/martinique.svg)
+}
+
+.tonga {
+    background-image: url(https://betorder162.com/assets/img/flags/tonga.svg)
+}
+
+.singapore {
+    background-image: url(https://betorder162.com/assets/img/flags/singapore.svg)
+}
+
+.palau {
+    background-image: url(https://betorder162.com/assets/img/flags/palau.svg)
+}
+
+.niue {
+    background-image: url(https://betorder162.com/assets/img/flags/niue.svg)
+}
+
+.macao {
+    background-image: url(https://betorder162.com/assets/img/flags/macao.svg)
+}
+
+.fiji {
+    background-image: url(https://betorder162.com/assets/img/flags/fiji.svg)
+}
+
+.faroe-islands {
+    background-image: url(https://betorder162.com/assets/img/flags/faroe-islands.svg)
+}
+
+.dominica {
+    background-image: url(https://betorder162.com/assets/img/flags/dominica.svg)
+}
+
+.vanuatu {
+    background-image: url(https://betorder162.com/assets/img/flags/vanuatu.svg)
+}
+
+.sierra-leone {
+    background-image: url(https://betorder162.com/assets/img/flags/sierra-leone.svg)
+}
+
+.seychelles {
+    background-image: url(https://betorder162.com/assets/img/flags/seychelles.svg)
+}
+
+.kosovo {
+    background-image: url(https://betorder162.com/assets/img/flags/kosovo.svg)
+}
+
+.england {
+    background-image: url(https://betorder162.com/assets/img/flags/england.svg)
+}
+
+.united-states-of-america {
+    background-image: url(https://betorder162.com/assets/img/flags/united-states-of-america.svg)
+}
+
+.guinea {
+    background-image: url(https://betorder162.com/assets/img/flags/guinea.svg)
+}
+
+.turks-and-caicos {
+    background-image: url(https://betorder162.com/assets/img/flags/turks-and-caicos.svg)
+}
+
+.tokelau {
+    background-image: url(https://betorder162.com/assets/img/flags/tokelau.svg)
+}
+
+.gambia {
+    background-image: url(https://betorder162.com/assets/img/flags/gambia.svg)
+}
+
+.south-sudan {
+    background-image: url(https://betorder162.com/assets/img/flags/south-sudan.svg)
+}
+
+.solomon-islands {
+    background-image: url(https://betorder162.com/assets/img/flags/solomon-islands.svg)
+}
+
+.vietnam {
+    background-image: url(https://betorder162.com/assets/img/flags/vietnam.svg)
+}
+
+.sint-maarten {
+    background-image: url(https://betorder162.com/assets/img/flags/sint-maarten.svg)
+}
+
+.saint-kitts-and-nevis {
+    background-image: url(https://betorder162.com/assets/img/flags/saint-kitts-and-nevis.svg)
+}
+
+.pitcairn-islands {
+    background-image: url(https://betorder162.com/assets/img/flags/pitcairn-islands.svg)
+}
+
+.palestine {
+    background-image: url(https://betorder162.com/assets/img/flags/palestine.svg)
+}
+
+.northern-marianas-islands {
+    background-image: url(https://betorder162.com/assets/img/flags/northern-marianas-islands.svg)
+}
+
+.nauru {
+    background-image: url(https://betorder162.com/assets/img/flags/nauru.svg)
+}
+
+.portugal {
+    background-image: url(https://betorder162.com/assets/img/flags/portugal.svg)
+}
+
+.montserrat {
+    background-image: url(https://betorder162.com/assets/img/flags/montserrat.svg)
+}
+
+.mauritania {
+    background-image: url(https://betorder162.com/assets/img/flags/mauritania.svg)
+}
+
+.kuwait {
+    background-image: url(https://betorder162.com/assets/img/flags/kuwait.svg)
+}
+
+.guernsey {
+    background-image: url(https://betorder162.com/assets/img/flags/guernsey.svg)
+}
+
+.guam {
+    background-image: url(https://betorder162.com/assets/img/flags/guam.svg)
+}
+
+.grenada {
+    background-image: url(https://betorder162.com/assets/img/flags/grenada.svg)
+}
+
+.greenland {
+    background-image: url(https://betorder162.com/assets/img/flags/greenland.svg)
+}
+
+.thailand {
+    background-image: url(https://betorder162.com/assets/img/flags/thailand.svg)
+}
+
+.gibraltar {
+    background-image: url(https://betorder162.com/assets/img/flags/gibraltar.svg)
+}
+
+.gabon {
+    background-image: url(https://betorder162.com/assets/img/flags/gabon.svg)
+}
+
+.falkland-islands {
+    background-image: url(https://betorder162.com/assets/img/flags/falkland-islands.svg)
+}
+
+.virgin-islands {
+    background-image: url(https://betorder162.com/assets/img/flags/virgin-islands.svg)
+}
+
+.austria {
+    background-image: url(https://betorder162.com/assets/img/flags/austria.svg)
+}
+
+.vatican-city {
+    background-image: url(https://betorder162.com/assets/img/flags/vatican-city.svg)
+}
+
+.turkmenistan {
+    background-image: url(https://betorder162.com/assets/img/flags/turkmenistan.svg)
+}
+
+.togo {
+    background-image: url(https://betorder162.com/assets/img/flags/togo.svg)
+}
+
+.bahamas {
+    background-image: url(https://betorder162.com/assets/img/flags/bahamas.svg)
+}
+
+.netherlands {
+    background-image: url(https://betorder162.com/assets/img/flags/netherlands.svg)
+}
+
+.suriname {
+    background-image: url(https://betorder162.com/assets/img/flags/suriname.svg)
+}
+
+.somalia {
+    background-image: url(https://betorder162.com/assets/img/flags/somalia.svg)
+}
+
+.sao-tome-and-principe {
+    background-image: url(https://betorder162.com/assets/img/flags/sao-tome-and-principe.svg)
+}
+
+.norfolk-island {
+    background-image: url(https://betorder162.com/assets/img/flags/norfolk-island.svg)
+}
+
+.niger {
+    background-image: url(https://betorder162.com/assets/img/flags/niger.svg)
+}
+
+.micronesia {
+    background-image: url(https://betorder162.com/assets/img/flags/micronesia.svg)
+}
+
+.marshall-island {
+    background-image: url(https://betorder162.com/assets/img/flags/marshall-island.svg)
+}
+
+.canada {
+    background-image: url(https://betorder162.com/assets/img/flags/canada.svg)
+}
+
+.mali {
+    background-image: url(https://betorder162.com/assets/img/flags/mali.svg)
+}
+
+.kyrgyzstan {
+    background-image: url(https://betorder162.com/assets/img/flags/kyrgyzstan.svg)
+}
+
+.guinea-bissau {
+    background-image: url(https://betorder162.com/assets/img/flags/guinea-bissau.svg)
+}
+
+.eritrea {
+    background-image: url(https://betorder162.com/assets/img/flags/eritrea.svg)
+}
+
+.djibouti {
+    background-image: url(https://betorder162.com/assets/img/flags/djibouti.svg)
+}
+
+.curacao {
+    background-image: url(https://betorder162.com/assets/img/flags/curacao.svg)
+}
+
+.san-marino {
+    background-image: url(https://betorder162.com/assets/img/flags/san-marino.svg)
+}
+
+.liechtenstein {
+    background-image: url(https://betorder162.com/assets/img/flags/liechtenstein.svg)
+}
+
+.india {
+    background-image: url(https://betorder162.com/assets/img/flags/india.svg)
+}
+
+.liberia {
+    background-image: url(https://betorder162.com/assets/img/flags/liberia.svg)
+}
+
+.yemen {
+    background-image: url(https://betorder162.com/assets/img/flags/yemen.svg)
+}
+
+.uzbekistn {
+    background-image: url(https://betorder162.com/assets/img/flags/uzbekistn.svg)
+}
+
+.sudan {
+    background-image: url(https://betorder162.com/assets/img/flags/sudan.svg)
+}
+
+.republic-of-macedonia {
+    background-image: url(https://betorder162.com/assets/img/flags/republic-of-macedonia.svg)
+}
+
+.libya {
+    background-image: url(https://betorder162.com/assets/img/flags/libya.svg)
+}
+
+.russia {
+    background-image: url(https://betorder162.com/assets/img/flags/russia.svg)
+}
+
+.papua-new-guinea {
+    background-image: url(https://betorder162.com/assets/img/flags/papua-new-guinea.svg)
+}
+
+.montenegro {
+    background-image: url(https://betorder162.com/assets/img/flags/montenegro.svg)
+}
+
+.moldova {
+    background-image: url(https://betorder162.com/assets/img/flags/moldova.svg)
+}
+
+.maldives {
+    background-image: url(https://betorder162.com/assets/img/flags/maldives.svg)
+}
+
+.french-polynesia {
+    background-image: url(https://betorder162.com/assets/img/flags/french-polynesia.svg)
+}
+
+.trinidad-and-tobago {
+    background-image: url(https://betorder162.com/assets/img/flags/trinidad-and-tobago.svg)
+}
+
+.tajikistan {
+    background-image: url(https://betorder162.com/assets/img/flags/tajikistan.svg)
+}
+
+.sri-lanka {
+    background-image: url(https://betorder162.com/assets/img/flags/sri-lanka.svg)
+}
+
+.mexico {
+    background-image: url(https://betorder162.com/assets/img/flags/mexico.svg)
+}
+
+.republic-of-the-congo {
+    background-image: url(https://betorder162.com/assets/img/flags/republic-of-the-congo.svg)
+}
+
+.equatorial-guinea {
+    background-image: url(https://betorder162.com/assets/img/flags/equatorial-guinea.svg)
+}
+
+.zimbabwe {
+    background-image: url(https://betorder162.com/assets/img/flags/zimbabwe.svg)
+}
+
+.rwanda {
+    background-image: url(https://betorder162.com/assets/img/flags/rwanda.svg)
+}
+
+.lesotho {
+    background-image: url(https://betorder162.com/assets/img/flags/lesotho.svg)
+}
+
+.isle-of-man {
+    background-image: url(https://betorder162.com/assets/img/flags/isle-of-man.svg)
+}
+
+.haiti {
+    background-image: url(https://betorder162.com/assets/img/flags/haiti.svg)
+}
+
+.samoa {
+    background-image: url(https://betorder162.com/assets/img/flags/samoa.svg)
+}
+
+.nepal {
+    background-image: url(https://betorder162.com/assets/img/flags/nepal.svg)
+}
+
+.brazil {
+    background-image: url(https://betorder162.com/assets/img/flags/brazil.svg)
+}
+
+.mongolia {
+    background-image: url(https://betorder162.com/assets/img/flags/mongolia.svg)
+}
+
+.malawi {
+    background-image: url(https://betorder162.com/assets/img/flags/malawi.svg)
+}
+
+.madagascar {
+    background-image: url(https://betorder162.com/assets/img/flags/madagascar.svg)
+}
+
+.jersey {
+    background-image: url(https://betorder162.com/assets/img/flags/jersey.svg)
+}
+
+.ghana {
+    background-image: url(https://betorder162.com/assets/img/flags/ghana.svg)
+}
+
+.georgia {
+    background-image: url(https://betorder162.com/assets/img/flags/georgia.svg)
+}
+
+.estonia {
+    background-image: url(https://betorder162.com/assets/img/flags/estonia.svg)
+}
+
+.democratic-republic-of-congo {
+    background-image: url(https://betorder162.com/assets/img/flags/democratic-republic-of-congo.svg)
+}
+
+.senegal {
+    background-image: url(https://betorder162.com/assets/img/flags/senegal.svg)
+}
+
+.paraguay {
+    background-image: url(https://betorder162.com/assets/img/flags/paraguay.svg)
+}
+
+.china {
+    background-image: url(https://betorder162.com/assets/img/flags/china.svg)
+}
+
+.united-kingdom {
+    background-image: url(https://betorder162.com/assets/img/flags/united-kingdom.svg)
+}
+
+.ETH {
+    background-image: url(https://betorder162.com/assets/img/flags/ethiopia.svg)
+}
+
+.OMN {
+    background-image: url(https://betorder162.com/assets/img/flags/oman.svg)
+}
+
+.TZA {
+    background-image: url(https://betorder162.com/assets/img/flags/tanzania.svg)
+}
+
+.SVN {
+    background-image: url(https://betorder162.com/assets/img/flags/slovenia.svg)
+}
+
+.PRI {
+    background-image: url(https://betorder162.com/assets/img/flags/puerto-rico.svg)
+}
+
+.MOZ {
+    background-image: url(https://betorder162.com/assets/img/flags/mozambique.svg)
+}
+
+.IRQ {
+    background-image: url(https://betorder162.com/assets/img/flags/iraq.svg)
+}
+
+.LBN {
+    background-image: url(https://betorder162.com/assets/img/flags/lebanon.svg)
+}
+
+.UGA {
+    background-image: url(https://betorder162.com/assets/img/flags/uganda.svg)
+}
+
+.NGA {
+    background-image: url(https://betorder162.com/assets/img/flags/nigeria.svg)
+}
+
+.ITA {
+    background-image: url(https://betorder162.com/assets/img/flags/italy.svg)
+}
+
+.MLT {
+    background-image: url(https://betorder162.com/assets/img/flags/malta.svg)
+}
+
+.TUN {
+    background-image: url(https://betorder162.com/assets/img/flags/tunisia.svg)
+}
+
+.NIC {
+    background-image: url(https://betorder162.com/assets/img/flags/nicaragua.svg)
+}
+
+.SLV {
+    background-image: url(https://betorder162.com/assets/img/flags/el-salvador.svg)
+}
+
+.ZMB {
+    background-image: url(https://betorder162.com/assets/img/flags/zambia.svg)
+}
+
+.WAL {
+    background-image: url(https://betorder162.com/assets/img/flags/wales.svg)
+}
+
+.DOM {
+    background-image: url(https://betorder162.com/assets/img/flags/dominican-republic.svg)
+}
+
+.QAT {
+    background-image: url(https://betorder162.com/assets/img/flags/qatar.svg)
+}
+
+.NAM {
+    background-image: url(https://betorder162.com/assets/img/flags/namibia.svg)
+}
+
+.MUS {
+    background-image: url(https://betorder162.com/assets/img/flags/mauritius.svg)
+}
+
+.european-union {
+    background-image: url(https://betorder162.com/assets/img/flags/european-union.svg)
+}
+
+.LUX {
+    background-image: url(https://betorder162.com/assets/img/flags/luxembourg.svg)
+}
+
+.hawaii {
+    background-image: url(https://betorder162.com/assets/img/flags/hawaii.svg)
+}
+
+.LTU {
+    background-image: url(https://betorder162.com/assets/img/flags/lithuania.svg)
+}
+
+.JAM {
+    background-image: url(https://betorder162.com/assets/img/flags/jamaica.svg)
+}
+
+.HND {
+    background-image: url(https://betorder162.com/assets/img/flags/honduras.svg)
+}
+
+.MMR {
+    background-image: url(https://betorder162.com/assets/img/flags/myanmar.svg)
+}
+
+.KEN {
+    background-image: url(https://betorder162.com/assets/img/flags/kenya.svg)
+}
+
+.CYP {
+    background-image: url(https://betorder162.com/assets/img/flags/cyprus.svg)
+}
+
+.PAK {
+    background-image: url(https://betorder162.com/assets/img/flags/pakistan.svg)
+}
+
+.LVA {
+    background-image: url(https://betorder162.com/assets/img/flags/latvia.svg)
+}
+
+.JPN {
+    background-image: url(https://betorder162.com/assets/img/flags/japan.svg)
+}
+
+.KAZ {
+    background-image: url(https://betorder162.com/assets/img/flags/kazakhstan.svg)
+}
+
+.SRB {
+    background-image: url(https://betorder162.com/assets/img/flags/serbia.svg)
+}
+
+.SCO {
+    background-image: url(https://betorder162.com/assets/img/flags/scotland.svg)
+}
+
+.PRK {
+    background-image: url(https://betorder162.com/assets/img/flags/north-korea.svg)
+}
+
+.URY {
+    background-image: url(https://betorder162.com/assets/img/flags/uruguay.svg)
+}
+
+.SYR {
+    background-image: url(https://betorder162.com/assets/img/flags/syria.svg)
+}
+
+.GTM {
+    background-image: url(https://betorder162.com/assets/img/flags/guatemala.svg)
+}
+
+.ISL {
+    background-image: url(https://betorder162.com/assets/img/flags/iceland.svg)
+}
+
+.JOR {
+    background-image: url(https://betorder162.com/assets/img/flags/jordan.svg)
+}
+
+.MCO {
+    background-image: url(https://betorder162.com/assets/img/flags/monaco.svg)
+}
+
+.ESP {
+    background-image: url(https://betorder162.com/assets/img/flags/spain.svg)
+}
+
+.SVK {
+    background-image: url(https://betorder162.com/assets/img/flags/slovakia.svg)
+}
+
+.united-nations {
+    background-image: url(https://betorder162.com/assets/img/flags/united-nations.svg)
+}
+
+.PAN {
+    background-image: url(https://betorder162.com/assets/img/flags/panama.svg)
+}
+
+.NZL {
+    background-image: url(https://betorder162.com/assets/img/flags/new-zealand.svg)
+}
+
+.ECU {
+    background-image: url(https://betorder162.com/assets/img/flags/ecuador.svg)
+}
+
+.ROU {
+    background-image: url(https://betorder162.com/assets/img/flags/romania.svg)
+}
+
+.CHL {
+    background-image: url(https://betorder162.com/assets/img/flags/chile.svg)
+}
+
+.FIN {
+    background-image: url(https://betorder162.com/assets/img/flags/finland.svg)
+}
+
+.HUN {
+    background-image: url(https://betorder162.com/assets/img/flags/hungary.svg)
+}
+
+.BEL {
+    background-image: url(https://betorder162.com/assets/img/flags/belgium.svg)
+}
+
+.KOR {
+    background-image: url(https://betorder162.com/assets/img/flags/south-korea.svg)
+}
+
+.MYS {
+    background-image: url(https://betorder162.com/assets/img/flags/malaysia.svg)
+}
+
+.VEN {
+    background-image: url(https://betorder162.com/assets/img/flags/venezuela.svg)
+}
+
+.NOR {
+    background-image: url(https://betorder162.com/assets/img/flags/norway.svg)
+}
+
+.SAU {
+    background-image: url(https://betorder162.com/assets/img/flags/saudi-arabia.svg)
+}
+
+.ISR {
+    background-image: url(https://betorder162.com/assets/img/flags/israel.svg)
+}
+
+.CZE {
+    background-image: url(https://betorder162.com/assets/img/flags/czech-republic.svg)
+}
+
+.COL {
+    background-image: url(https://betorder162.com/assets/img/flags/colombia.svg)
+}
+
+.IRA,
+.IRN {
+    background-image: url(https://betorder162.com/assets/img/flags/iran.svg)
+}
+
+.ARG {
+    background-image: url(https://betorder162.com/assets/img/flags/argentina.svg)
+}
+
+.UKR {
+    background-image: url(https://betorder162.com/assets/img/flags/ukraine.svg)
+}
+
+.DEU {
+    background-image: url(https://betorder162.com/assets/img/flags/germany.svg)
+}
+
+.HKG {
+    background-image: url(https://betorder162.com/assets/img/flags/hong-kong.svg)
+}
+
+.ARE {
+    background-image: url(https://betorder162.com/assets/img/flags/united-arab-emirates.svg)
+}
+
+.LAO {
+    background-image: url(https://betorder162.com/assets/img/flags/laos.svg)
+}
+
+.IRL {
+    background-image: url(https://betorder162.com/assets/img/flags/ireland.svg)
+}
+
+.GRC {
+    background-image: url(https://betorder162.com/assets/img/flags/greece.svg)
+}
+
+.DNK {
+    background-image: url(https://betorder162.com/assets/img/flags/denmark.svg)
+}
+
+.SWE {
+    background-image: url(https://betorder162.com/assets/img/flags/sweden.svg)
+}
+
+.PER {
+    background-image: url(https://betorder162.com/assets/img/flags/peru.svg)
+}
+
+.ZAF {
+    background-image: url(https://betorder162.com/assets/img/flags/south-africa.svg)
+}
+
+.PHL {
+    background-image: url(https://betorder162.com/assets/img/flags/philippines.svg)
+}
+
+.FRA {
+    background-image: url(https://betorder162.com/assets/img/flags/france.svg)
+}
+
+.IDN {
+    background-image: url(https://betorder162.com/assets/img/flags/indonesia.svg)
+}
+
+.EGY {
+    background-image: url(https://betorder162.com/assets/img/flags/egypt.svg)
+}
+
+.TWN {
+    background-image: url(https://betorder162.com/assets/img/flags/taiwan.svg)
+}
+
+.COK {
+    background-image: url(https://betorder162.com/assets/img/flags/cook-islands.svg)
+}
+
+.CCK {
+    background-image: url(https://betorder162.com/assets/img/flags/cocos-island.svg)
+}
+
+.CXR {
+    background-image: url(https://betorder162.com/assets/img/flags/christmas-island.svg)
+}
+
+.ceuta {
+    background-image: url(https://betorder162.com/assets/img/flags/ceuta.svg)
+}
+
+.ASM {
+    background-image: url(https://betorder162.com/assets/img/flags/american-samoa.svg)
+}
+
+.MAR {
+    background-image: url(https://betorder162.com/assets/img/flags/morocco.svg)
+}
+
+.AIA {
+    background-image: url(https://betorder162.com/assets/img/flags/anguilla.svg)
+}
+
+.corsica {
+    background-image: url(https://betorder162.com/assets/img/flags/corsica.svg)
+}
+
+.canary-islands {
+    background-image: url(https://betorder162.com/assets/img/flags/canary-islands.svg)
+}
+
+.COM {
+    background-image: url(https://betorder162.com/assets/img/flags/comoros.svg)
+}
+
+.CAF {
+    background-image: url(https://betorder162.com/assets/img/flags/central-african-republic.svg)
+}
+
+.CYM {
+    background-image: url(https://betorder162.com/assets/img/flags/cayman-islands.svg)
+}
+
+.IOT {
+    background-image: url(https://betorder162.com/assets/img/flags/british-indian-ocean-territory.svg)
+}
+
+.BTN {
+    background-image: url(https://betorder162.com/assets/img/flags/bhutan.svg)
+}
+
+.TCD {
+    background-image: url(https://betorder162.com/assets/img/flags/chad.svg)
+}
+
+.CPV {
+    background-image: url(https://betorder162.com/assets/img/flags/cape-verde.svg)
+}
+
+.CHE {
+    background-image: url(https://betorder162.com/assets/img/flags/switzerland.svg)
+}
+
+.BEN {
+    background-image: url(https://betorder162.com/assets/img/flags/benin.svg)
+}
+
+.ABW {
+    background-image: url(https://betorder162.com/assets/img/flags/aruba.svg)
+}
+
+.abkhazia {
+    background-image: url(https://betorder162.com/assets/img/flags/abkhazia.svg)
+}
+
+.balearic-islands {
+    background-image: url(https://betorder162.com/assets/img/flags/balearic-islands.svg)
+}
+
+.AND {
+    background-image: url(https://betorder162.com/assets/img/flags/andorra.svg)
+}
+
+.BDI {
+    background-image: url(https://betorder162.com/assets/img/flags/burundi.svg)
+}
+
+.ATG {
+    background-image: url(https://betorder162.com/assets/img/flags/antigua-and-barbuda.svg)
+}
+
+.aland-islands {
+    background-image: url(https://betorder162.com/assets/img/flags/aland-islands.svg)
+}
+
+.CMR {
+    background-image: url(https://betorder162.com/assets/img/flags/cameroon.svg)
+}
+
+.BRN {
+    background-image: url(https://betorder162.com/assets/img/flags/brunei.svg)
+}
+
+.POL {
+    background-image: url(https://betorder162.com/assets/img/flags/poland.svg)
+}
+
+.BES {
+    background-image: url(https://betorder162.com/assets/img/flags/bonaire.svg)
+}
+
+.BLR {
+    background-image: url(https://betorder162.com/assets/img/flags/belarus.svg)
+}
+
+.BRB {
+    background-image: url(https://betorder162.com/assets/img/flags/barbados.svg)
+}
+
+.VGB {
+    background-image: url(https://betorder162.com/assets/img/flags/british-virgin-islands.svg)
+}
+
+.BIH {
+    background-image: url(https://betorder162.com/assets/img/flags/bosnia-and-herzegovina.svg)
+}
+
+.BMU {
+    background-image: url(https://betorder162.com/assets/img/flags/bermuda.svg)
+}
+
+.BLZ {
+    background-image: url(https://betorder162.com/assets/img/flags/belize.svg)
+}
+
+.BHR {
+    background-image: url(https://betorder162.com/assets/img/flags/bahrain.svg)
+}
+
+.ALB {
+    background-image: url(https://betorder162.com/assets/img/flags/albania.svg)
+}
+
+.BFA {
+    background-image: url(https://betorder162.com/assets/img/flags/burkina-faso.svg)
+}
+
+.TUR {
+    background-image: url(https://betorder162.com/assets/img/flags/turkey.svg)
+}
+
+.basque-country {
+    background-image: url(https://betorder162.com/assets/img/flags/basque-country.svg)
+}
+
+.ARM {
+    background-image: url(https://betorder162.com/assets/img/flags/armenia.svg)
+}
+
+.AFG {
+    background-image: url(https://betorder162.com/assets/img/flags/afghanistan.svg)
+}
+
+.british-columbia {
+    background-image: url(https://betorder162.com/assets/img/flags/british-columbia.svg)
+}
+
+.AGO {
+    background-image: url(https://betorder162.com/assets/img/flags/angola.svg)
+}
+
+.AZE {
+    background-image: url(https://betorder162.com/assets/img/flags/azerbaijan.svg)
+}
+
+.DZA {
+    background-image: url(https://betorder162.com/assets/img/flags/algeria.svg)
+}
+
+.BWA {
+    background-image: url(https://betorder162.com/assets/img/flags/botswana.svg)
+}
+
+.BGD {
+    background-image: url(https://betorder162.com/assets/img/flags/bangladesh.svg)
+}
+
+.CUB {
+    background-image: url(https://betorder162.com/assets/img/flags/cuba.svg)
+}
+
+.AUS {
+    background-image: url(https://betorder162.com/assets/img/flags/australia.svg)
+}
+
+.CRI {
+    background-image: url(https://betorder162.com/assets/img/flags/costa-rica.svg)
+}
+
+.KHM {
+    background-image: url(https://betorder162.com/assets/img/flags/cambodia.svg)
+}
+
+.BOL {
+    background-image: url(https://betorder162.com/assets/img/flags/bolivia.svg)
+}
+
+.HRV {
+    background-image: url(https://betorder162.com/assets/img/flags/croatia.svg)
+}
+
+.BGR {
+    background-image: url(https://betorder162.com/assets/img/flags/bulgaria.svg)
+}
+
+.galapagos-islands {
+    background-image: url(https://betorder162.com/assets/img/flags/galapagos-islands.svg)
+}
+
+.MTQ {
+    background-image: url(https://betorder162.com/assets/img/flags/martinique.svg)
+}
+
+.TON {
+    background-image: url(https://betorder162.com/assets/img/flags/tonga.svg)
+}
+
+.st-lucia {
+    background-image: url(https://betorder162.com/assets/img/flags/st-lucia.svg)
+}
+
+.rapa-nui {
+    background-image: url(https://betorder162.com/assets/img/flags/rapa-nui.svg)
+}
+
+.SGP {
+    background-image: url(https://betorder162.com/assets/img/flags/singapore.svg)
+}
+
+.PLW {
+    background-image: url(https://betorder162.com/assets/img/flags/palau.svg)
+}
+
+.NIU {
+    background-image: url(https://betorder162.com/assets/img/flags/niue.svg)
+}
+
+.MAC {
+    background-image: url(https://betorder162.com/assets/img/flags/macao.svg)
+}
+
+.FJI {
+    background-image: url(https://betorder162.com/assets/img/flags/fiji.svg)
+}
+
+.FRO {
+    background-image: url(https://betorder162.com/assets/img/flags/faroe-islands.svg)
+}
+
+.DMA {
+    background-image: url(https://betorder162.com/assets/img/flags/dominica.svg)
+}
+
+.VUT {
+    background-image: url(https://betorder162.com/assets/img/flags/vanuatu.svg)
+}
+
+.SLE {
+    background-image: url(https://betorder162.com/assets/img/flags/sierra-leone.svg)
+}
+
+.SYC {
+    background-image: url(https://betorder162.com/assets/img/flags/seychelles.svg)
+}
+
+.KOS {
+    background-image: url(https://betorder162.com/assets/img/flags/kosovo.svg)
+}
+
+.ENG {
+    background-image: url(https://betorder162.com/assets/img/flags/england.svg)
+}
+
+.USA {
+    background-image: url(https://betorder162.com/assets/img/flags/united-states-of-america.svg)
+}
+
+.GIN {
+    background-image: url(https://betorder162.com/assets/img/flags/guinea.svg)
+}
+
+.orkney-islands {
+    background-image: url(https://betorder162.com/assets/img/flags/orkney-islands.svg)
+}
+
+.TCA {
+    background-image: url(https://betorder162.com/assets/img/flags/turks-and-caicos.svg)
+}
+
+.transnistria {
+    background-image: url(https://betorder162.com/assets/img/flags/transnistria.svg)
+}
+
+.TKL {
+    background-image: url(https://betorder162.com/assets/img/flags/tokelau.svg)
+}
+
+.GMB {
+    background-image: url(https://betorder162.com/assets/img/flags/gambia.svg)
+}
+
+.st-vincent-and-the-grenadines {
+    background-image: url(https://betorder162.com/assets/img/flags/st-vincent-and-the-grenadines.svg)
+}
+
+.SSD {
+    background-image: url(https://betorder162.com/assets/img/flags/south-sudan.svg)
+}
+
+.somaliland {
+    background-image: url(https://betorder162.com/assets/img/flags/somaliland.svg)
+}
+
+.SLB {
+    background-image: url(https://betorder162.com/assets/img/flags/solomon-islands.svg)
+}
+
+.VNM {
+    background-image: url(https://betorder162.com/assets/img/flags/vietnam.svg)
+}
+
+.SXM {
+    background-image: url(https://betorder162.com/assets/img/flags/sint-maarten.svg)
+}
+
+.sint-eustatius {
+    background-image: url(https://betorder162.com/assets/img/flags/sint-eustatius.svg)
+}
+
+.KNA {
+    background-image: url(https://betorder162.com/assets/img/flags/saint-kitts-and-nevis.svg)
+}
+
+.saba-island {
+    background-image: url(https://betorder162.com/assets/img/flags/saba-island.svg)
+}
+
+.PCN {
+    background-image: url(https://betorder162.com/assets/img/flags/pitcairn-islands.svg)
+}
+
+.PSE {
+    background-image: url(https://betorder162.com/assets/img/flags/palestine.svg)
+}
+
+.ossetia {
+    background-image: url(https://betorder162.com/assets/img/flags/ossetia.svg)
+}
+
+.MNP {
+    background-image: url(https://betorder162.com/assets/img/flags/northern-marianas-islands.svg)
+}
+
+.NRU {
+    background-image: url(https://betorder162.com/assets/img/flags/nauru.svg)
+}
+
+.PRT {
+    background-image: url(https://betorder162.com/assets/img/flags/portugal.svg)
+}
+
+.MSR {
+    background-image: url(https://betorder162.com/assets/img/flags/montserrat.svg)
+}
+
+.melilla {
+    background-image: url(https://betorder162.com/assets/img/flags/melilla.svg)
+}
+
+.MRT {
+    background-image: url(https://betorder162.com/assets/img/flags/mauritania.svg)
+}
+
+.KWT {
+    background-image: url(https://betorder162.com/assets/img/flags/kuwait.svg)
+}
+
+.GGY {
+    background-image: url(https://betorder162.com/assets/img/flags/guernsey.svg)
+}
+
+.GUM {
+    background-image: url(https://betorder162.com/assets/img/flags/guam.svg)
+}
+
+.GRD {
+    background-image: url(https://betorder162.com/assets/img/flags/grenada.svg)
+}
+
+.GRL {
+    background-image: url(https://betorder162.com/assets/img/flags/greenland.svg)
+}
+
+.THA {
+    background-image: url(https://betorder162.com/assets/img/flags/thailand.svg)
+}
+
+.GIB {
+    background-image: url(https://betorder162.com/assets/img/flags/gibraltar.svg)
+}
+
+.GAB {
+    background-image: url(https://betorder162.com/assets/img/flags/gabon.svg)
+}
+
+.FLK {
+    background-image: url(https://betorder162.com/assets/img/flags/falkland-islands.svg)
+}
+
+.VIR {
+    background-image: url(https://betorder162.com/assets/img/flags/virgin-islands.svg)
+}
+
+.AUT {
+    background-image: url(https://betorder162.com/assets/img/flags/austria.svg)
+}
+
+.VAT {
+    background-image: url(https://betorder162.com/assets/img/flags/vatican-city.svg)
+}
+
+.tubalu {
+    background-image: url(https://betorder162.com/assets/img/flags/tubalu.svg)
+}
+
+.TKM {
+    background-image: url(https://betorder162.com/assets/img/flags/turkmenistan.svg)
+}
+
+.TGO {
+    background-image: url(https://betorder162.com/assets/img/flags/togo.svg)
+}
+
+.BHS {
+    background-image: url(https://betorder162.com/assets/img/flags/bahamas.svg)
+}
+
+.NLD {
+    background-image: url(https://betorder162.com/assets/img/flags/netherlands.svg)
+}
+
+.azores-islands {
+    background-image: url(https://betorder162.com/assets/img/flags/azores-islands.svg)
+}
+
+.SUR {
+    background-image: url(https://betorder162.com/assets/img/flags/suriname.svg)
+}
+
+.SOM {
+    background-image: url(https://betorder162.com/assets/img/flags/somalia.svg)
+}
+
+.sicily {
+    background-image: url(https://betorder162.com/assets/img/flags/sicily.svg)
+}
+
+.sardinia {
+    background-image: url(https://betorder162.com/assets/img/flags/sardinia.svg)
+}
+
+.STP {
+    background-image: url(https://betorder162.com/assets/img/flags/sao-tome-and-principe.svg)
+}
+
+.NFK {
+    background-image: url(https://betorder162.com/assets/img/flags/norfolk-island.svg)
+}
+
+.NER {
+    background-image: url(https://betorder162.com/assets/img/flags/niger.svg)
+}
+
+.FSM {
+    background-image: url(https://betorder162.com/assets/img/flags/micronesia.svg)
+}
+
+.MHL {
+    background-image: url(https://betorder162.com/assets/img/flags/marshall-island.svg)
+}
+
+.CAN {
+    background-image: url(https://betorder162.com/assets/img/flags/canada.svg)
+}
+
+.MLI {
+    background-image: url(https://betorder162.com/assets/img/flags/mali.svg)
+}
+
+.KGZ {
+    background-image: url(https://betorder162.com/assets/img/flags/kyrgyzstan.svg)
+}
+
+.GNB {
+    background-image: url(https://betorder162.com/assets/img/flags/guinea-bissau.svg)
+}
+
+.ERI {
+    background-image: url(https://betorder162.com/assets/img/flags/eritrea.svg)
+}
+
+.DJI {
+    background-image: url(https://betorder162.com/assets/img/flags/djibouti.svg)
+}
+
+.CUW {
+    background-image: url(https://betorder162.com/assets/img/flags/curacao.svg)
+}
+
+.st-barts {
+    background-image: url(https://betorder162.com/assets/img/flags/st-barts.svg)
+}
+
+.SMR {
+    background-image: url(https://betorder162.com/assets/img/flags/san-marino.svg)
+}
+
+.northen-cyprus {
+    background-image: url(https://betorder162.com/assets/img/flags/northen-cyprus.svg)
+}
+
+.LIE {
+    background-image: url(https://betorder162.com/assets/img/flags/liechtenstein.svg)
+}
+
+.IND {
+    background-image: url(https://betorder162.com/assets/img/flags/india.svg)
+}
+
+.LBR {
+    background-image: url(https://betorder162.com/assets/img/flags/liberia.svg)
+}
+
+.YEM {
+    background-image: url(https://betorder162.com/assets/img/flags/yemen.svg)
+}
+
+.UZB {
+    background-image: url(https://betorder162.com/assets/img/flags/uzbekistn.svg)
+}
+
+.SDN {
+    background-image: url(https://betorder162.com/assets/img/flags/sudan.svg)
+}
+
+.sahrawi-arab-democratic-republic {
+    background-image: url(https://betorder162.com/assets/img/flags/sahrawi-arab-democratic-republic.svg)
+}
+
+.MKD {
+    background-image: url(https://betorder162.com/assets/img/flags/republic-of-macedonia.svg)
+}
+
+.otan {
+    background-image: url(https://betorder162.com/assets/img/flags/otan.svg)
+}
+
+.LBY {
+    background-image: url(https://betorder162.com/assets/img/flags/libya.svg)
+}
+
+.east-timor {
+    background-image: url(https://betorder162.com/assets/img/flags/east-timor.svg)
+}
+
+.tibet {
+    background-image: url(https://betorder162.com/assets/img/flags/tibet.svg)
+}
+
+.RUS {
+    background-image: url(https://betorder162.com/assets/img/flags/russia.svg)
+}
+
+.PNG {
+    background-image: url(https://betorder162.com/assets/img/flags/papua-new-guinea.svg)
+}
+
+.MNE {
+    background-image: url(https://betorder162.com/assets/img/flags/montenegro.svg)
+}
+
+.MDA {
+    background-image: url(https://betorder162.com/assets/img/flags/moldova.svg)
+}
+
+.MDV {
+    background-image: url(https://betorder162.com/assets/img/flags/maldives.svg)
+}
+
+.madeira {
+    background-image: url(https://betorder162.com/assets/img/flags/madeira.svg)
+}
+
+.PYF {
+    background-image: url(https://betorder162.com/assets/img/flags/french-polynesia.svg)
+}
+
+.TTO {
+    background-image: url(https://betorder162.com/assets/img/flags/trinidad-and-tobago.svg)
+}
+
+.TJK {
+    background-image: url(https://betorder162.com/assets/img/flags/tajikistan.svg)
+}
+
+.LKA {
+    background-image: url(https://betorder162.com/assets/img/flags/sri-lanka.svg)
+}
+
+.MEX {
+    background-image: url(https://betorder162.com/assets/img/flags/mexico.svg)
+}
+
+.COG {
+    background-image: url(https://betorder162.com/assets/img/flags/republic-of-the-congo.svg)
+}
+
+.GNQ {
+    background-image: url(https://betorder162.com/assets/img/flags/equatorial-guinea.svg)
+}
+
+.ZWE {
+    background-image: url(https://betorder162.com/assets/img/flags/zimbabwe.svg)
+}
+
+.RWA {
+    background-image: url(https://betorder162.com/assets/img/flags/rwanda.svg)
+}
+
+.LSO {
+    background-image: url(https://betorder162.com/assets/img/flags/lesotho.svg)
+}
+
+.ivory-coast {
+    background-image: url(https://betorder162.com/assets/img/flags/ivory-coast.svg)
+}
+
+.IMN {
+    background-image: url(https://betorder162.com/assets/img/flags/isle-of-man.svg)
+}
+
+.HTI {
+    background-image: url(https://betorder162.com/assets/img/flags/haiti.svg)
+}
+
+.WSM {
+    background-image: url(https://betorder162.com/assets/img/flags/samoa.svg)
+}
+
+.NPL {
+    background-image: url(https://betorder162.com/assets/img/flags/nepal.svg)
+}
+
+.BRA {
+    background-image: url(https://betorder162.com/assets/img/flags/brazil.svg)
+}
+
+.MNG {
+    background-image: url(https://betorder162.com/assets/img/flags/mongolia.svg)
+}
+
+.MWI {
+    background-image: url(https://betorder162.com/assets/img/flags/malawi.svg)
+}
+
+.MDG {
+    background-image: url(https://betorder162.com/assets/img/flags/madagascar.svg)
+}
+
+.JEY {
+    background-image: url(https://betorder162.com/assets/img/flags/jersey.svg)
+}
+
+.GHA {
+    background-image: url(https://betorder162.com/assets/img/flags/ghana.svg)
+}
+
+.GEO {
+    background-image: url(https://betorder162.com/assets/img/flags/georgia.svg)
+}
+
+.EST {
+    background-image: url(https://betorder162.com/assets/img/flags/estonia.svg)
+}
+
+.COD {
+    background-image: url(https://betorder162.com/assets/img/flags/democratic-republic-of-congo.svg)
+}
+
+.SEN {
+    background-image: url(https://betorder162.com/assets/img/flags/senegal.svg)
+}
+
+.PRY {
+    background-image: url(https://betorder162.com/assets/img/flags/paraguay.svg)
+}
+
+.CHN {
+    background-image: url(https://betorder162.com/assets/img/flags/china.svg)
+}
+
+.GBR {
+    background-image: url(https://betorder162.com/assets/img/flags/england.svg)
+}
+
+.ELE,
+.INT {
+    background-image: url(https://betorder162.com/assets/img/flags/united-nations.svg)
+}
+
+.HON {
+    background-image: url(https://betorder162.com/assets/img/flags/honkong.svg)
+}
+
+
+/* switch styles */
+
+.onoffswitch {
+    position: relative;
+    width: 52px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    height: 19px;
+    padding: 0;
+    line-height: 19px;
+    border: 2px solid #E3E3E3;
+    border-radius: 19px;
+    background-color: #FFFFFF;
+    transition: background-color 0.3s ease-in;
+}
+
+.onoffswitch-label:before {
+    content: "";
+    display: block;
+    width: 19px;
+    margin: 0px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 31px;
+    border: 2px solid #E3E3E3;
+    border-radius: 19px;
+    transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label {
+    background-color: #116466;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label,
+.onoffswitch-checkbox:checked+.onoffswitch-label:before {
+    border-color: #116466;
+}
+
+.onoffswitch-checkbox:checked+.onoffswitch-label:before {
+    right: 0px;
+}

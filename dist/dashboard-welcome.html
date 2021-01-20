@@ -5,13 +5,1523 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Nano scroller css -->
+    <link rel="stylesheet" href="css/nanoscroller.css" />
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- ICONS Stylesheet -->
+    <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+    <style>
+        .nano .nano-content {
+            padding: 10px;
+        }
+        
+        .bet-goalrss::before {
+            content: "";
+            color: white
+        }
+        
+        .nano .nano-slider {
+            background: #af2c2c;
+        }
+        
+        .bet-top-leagues:before {
+            content: "";
+        }
+        
+        .icon:after,
+        .icon:before {
+            font-family: beticon;
+            font-style: normal;
+            font-weight: 400;
+            display: inline-block;
+            text-decoration: inherit;
+            width: 1em;
+            margin-right: .2em;
+            text-align: center;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1em;
+            margin-left: .2em;
+            -webkit-font-smoothing: antialiased
+        }
+        
+        .dot .active {
+            background: rebeccapurple !important;
+        }
+        
+        .disabled {
+            display: none !important;
+        }
+    </style>
 </head>
 
-<body class="antialiased bg-white overflow-x-hidden">
+<body class="antialiased bg-black overflow-hidden">
+    <header class="w-full">
+        <div class="top bg-primary py-4 w-full">
+            <div class="container mx-auto">
 
+
+                <div class="flex flex-wrap items-center justify-between">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="https://betorder162.com/assets/img/logo.png" alt="Betorder"></a>
+                    </div>
+                    <div class="list">
+                        <ul class="list-reset flex space-x-4 text-white font-semibold">
+                            <li>
+                                <a href="">Sports</a>
+                            </li>
+                            <li>
+                                <a href="">In-Play</a>
+                            </li>
+                            <li>
+                                <a href="">Slot</a>
+                            </li>
+                            <li>
+                                <a href="">Casino</a>
+                            </li>
+                            <li>
+                                <a href="">Virtuals</a>
+                            </li>
+                            <li>
+                                <a href="">Poker</a>
+                            </li>
+                            <li>
+                                <a href="">Bingo</a>
+                            </li>
+                            <li>
+                                <a href="">Bonuses</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="login">
+                        <div class="top-right flex space-x-4 tex-white items-center">
+                            <a href="" class="font-semibold text-white">Login</a>
+                            <button class="appearance-none px-3 py-1 bg-secondary font-semibold text-white">Register Now</button>
+                            <button class="appearance-none px-3 py-1 bg-yellow font-semibold text-white">Live Support</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="bottom bg-dark py-2 w-full shadow-md">
+            <div class="container mx-auto">
+                <div class="flex  space-x-4 items-center">
+                    <div class="w-1/6 ">
+                        <div class="flex bg-opacity-5 bg-gray-800 text-white">
+                            <input type="search" placeholder="search" class="w-full px-3 py-2  bg-gray-800">
+                        </div>
+                    </div>
+                    <div class="w-7/12">
+                        <ul class="flex space-x-2 text-gray-200 items-center">
+                            <li><a href="">Sports Betting</a></li>
+                            <li><a href="">FootBall</a></li>
+                            <li><a href="">Tennis</a></li>
+                            <li><a href="">Basket Ball</a></li>
+                            <li><a href="">Results</a></li>
+                            <li><a href="">Promotions</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="w-1/4 flex justify-end space-x-6">
+                        <div class="flex relative text-white px-2 space-x-2">
+                            <span>Language</span>
+                            <span class="text-white h-3 w-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                            </span>
+                        </div>
+                        <div class="flex relative text-white px-2 space-x-2">
+                            <span>Odds</span>
+                            <span class="text-white h-3 w-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="flex flex-wrap lg:flex-nowrap">
+            <div class="w-1/6 sticky top-0 max-h-screen border border-gray-900 nano">
+                <div class="nano-content space-y-5 px-2">
+                    <div class="card border border-gray-700 shadow-sm py-3 rounded-md text-gray-200">
+                        <div class="header border-b py-3 flex items-center justify-between">
+                            <h4 class=" font-bold border-l-4 border-primary pl-4">Top leaques</h4>
+                            <span class="icon mr-3">
+                                <i class="fas fa-trophy"></i>
+                            </span>
+                        </div>
+                        <div class="body p-3">
+                            <ul class="list-reset my-4 mt-8 space-y-4">
+                                <li class="flex w-full space-x-3 text-gray-200 items-center">
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle></svg>
+                                    <span class="font-light text-sm">Premier League</span>
+                                </li>
+                                <li class="flex w-full space-x-3 text-gray-200 items-center">
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle></svg>
+                                    <span class="font-light text-sm">LaLiga</span>
+                                </li>
+                                <li class="flex w-full space-x-3 text-gray-200 items-center">
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle></svg>
+                                    <span class="font-light text-sm">Bundesliga</span>
+                                </li>
+                                <li class="flex w-full space-x-3 text-gray-200 items-center">
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle></svg>
+                                    <span class="font-light text-sm">Serie A</span>
+                                </li>
+                                <li class="flex w-full space-x-3 text-gray-200 items-center">
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle></svg>
+                                    <span class="font-light text-sm">Ligue 1</span>
+                                </li>
+                                <li class="flex w-full space-x-3 text-gray-200 items-center">
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle></svg>
+                                    <span class="font-light text-sm">Super Lig</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card border border-gray-700 shadow-sm py-3 rounded-md text-gray-200">
+                        <div class="header border-b py-3 flex items-center justify-between">
+                            <h4 class=" font-bold border-l-4 border-yellow pl-4">Favorites</h4>
+                            <span class="icon text-yellow mr-3">
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div class="body p-3">
+                            <ul class="list-reset my-4 mt-8 space-y-4">
+                                <li class="flex w-full space-x-3 text-gray-200 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span class="font-light text-sm">I-League</span>
+                                </li>
+                                <li class="flex w-full space-x-3 text-gray-200 items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span class="font-light text-sm">Sevilla</span>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card border border-gray-700 shadow-sm py-3 rounded-md text-gray-200">
+                        <div class="header border-b py-3 flex items-center justify-between">
+                            <h4 class=" font-bold border-l-4 border-white pl-4">Sports Menu</h4>
+                            <span class="icon  mr-3">
+                                <i class="fas fa-align-right"></i>
+                            </span>
+                        </div>
+                        <div class="body p-3">
+                            <ul class="list-reset my-4 mt-8 space-y-4">
+                                <li class="flex w-full space-x-3 text-gray-200 items-center">
+                                    <i class="far fa-futbol"></i>
+                                    <span class="font-light text-sm">Football</span>
+                                </li>
+                                <li class="flex w-full space-x-3 text-gray-200 items-center">
+                                    <i class="fas fa-hockey-puck"></i>
+                                    <span class="font-light text-sm">Ice Hockey</span>
+                                </li>
+                                <li class="flex w-full space-x-3 text-gray-200 items-center">
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle></svg>
+                                    <span class="font-light text-sm">Tennis</span>
+                                </li>
+                                <li class="flex w-full space-x-3 text-gray-200 items-center">
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle></svg>
+                                    <span class="font-light text-sm">Basket ball</span>
+                                </li>
+                                <li class="flex w-full space-x-3 text-gray-200 items-center">
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle></svg>
+                                    <span class="font-light text-sm">BaseBall</span>
+                                </li>
+                                <li class="flex w-full space-x-3 text-gray-200 items-center">
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle></svg>
+                                    <span class="font-light text-sm">Golf</span>
+                                </li>
+                                <li class="flex w-full space-x-3 text-gray-200 items-center">
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle></svg>
+                                    <span class="font-light text-sm">Rugby</span>
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+                        <div class="footer p-3 ">
+                            <div class="border-t border-gray-500 py-4">
+                                <h4 class="text-gray-200 uppercase font-semibold text-sm">BET services</h4>
+                                <div class="py-2 ">
+                                    <ul class="list-reset text-sm text-gray-300 space-y-5 px-1 mt-4">
+                                        <li><a href="">Results</a></li>
+                                        <li><a href="">Promotions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="h-20"></div>
+
+                </div>
+
+
+            </div>
+            <div class="w-7/12  max-h-screen  nano">
+
+                <div class="nano-content ">
+
+                    <div class="owl-carousel owl-one owl-theme relative" style="position: relative !important;">
+                        <div class="item h-64 bg-primary">
+                            <a href="" class="w-full h-full">
+                                <img class="h-full w-full" src="https://betorder162.com/assets/img/slider/sportsbook/tr/19.jpg" />
+                            </a>
+                        </div>
+                        <div class="item h-64 bg-primary">
+                            <a href="" class="w-full h-full">
+                                <img class="h-full w-full" src="https://betorder162.com/assets/img/slider/sportsbook/tr/19.jpg" />
+                            </a>
+                        </div>
+
+                        <div class="item h-64 bg-primary">
+                            <a href="" class="w-full h-full">
+                                <img class="h-full w-full" src="https://betorder162.com/assets/img/slider/sportsbook/tr/19.jpg" />
+                            </a>
+                        </div>
+
+                        <div class="item h-64 bg-primary">
+                            <a href="" class="w-full h-full">
+                                <img class="h-full w-full" src="https://betorder162.com/assets/img/slider/sportsbook/tr/19.jpg" />
+                            </a>
+                        </div>
+
+                        <div class="item h-64 bg-primary">
+                            <a href="" class="w-full h-full">
+                                <img class="h-full w-full" src="https://betorder162.com/assets/img/slider/sportsbook/tr/19.jpg" />
+                            </a>
+                        </div>
+
+                        <div class="item h-64 bg-primary">
+                            <a href="" class="w-full h-full">
+                                <img class="h-full w-full" src="https://betorder162.com/assets/img/slider/sportsbook/tr/19.jpg" />
+                            </a>
+                        </div>
+
+                        <div class="item h-64 bg-primary">
+                            <a href="" class="w-full h-full">
+                                <img class="h-full w-full" src="https://betorder162.com/assets/img/slider/sportsbook/tr/19.jpg" />
+                            </a>
+                        </div>
+
+                        <div class="item h-64 bg-primary">
+                            <a href="" class="w-full h-full">
+                                <img class="h-full w-full" src="https://betorder162.com/assets/img/slider/sportsbook/tr/19.jpg" />
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="livebetting border rounded-md border-gray-700">
+                        <div class="w-full flex flex-wrap justify-between py-3 border-b border-gray-600">
+                            <div>
+                                <h4 class="border-l-4 border-primary text-white font-medium pl-4">Live Betting</h4>
+
+                            </div>
+                            <div class="flex items-center space-x-3 text-white">
+                                <span class="text-sm font-bold border-b">Top</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>
+                            </div>
+                            <div class="text-gray-200 font-bold flex space-x-2">
+                                <span>2 events</span>
+                                <div class="icon-wrap">
+                                    <span class="icon bet-goalrss"></span></div>
+                            </div>
+                        </div>
+                        <div class="w-full text-gray-200">
+                            <div class="owl-carousel owl-two owl-theme relative mt-6 px-2" style="position: relative !important;">
+
+                                <div class="item  bg-dark bg-opacity-80 ">
+                                    <a class="space-y-2 text-center" href="javascript:void(0)">
+                                        <div class="text-lg">
+                                            <span class="icon text-4xl  bet-ice-hockey"></span>
+                                        </div>
+                                        <div class="text-xs">Ice Hockey</div>
+                                    </a>
+                                </div>
+
+                                <div class="item  bg-dark bg-opacity-80 ">
+                                    <a class="space-y-2 text-center" href="javascript:void(0)">
+                                        <div class="text-lg">
+                                            <span class="icon text-4xl  icon bet-soccer"></span>
+                                        </div>
+                                        <div class="text-xs">Football</div>
+                                    </a>
+                                </div>
+
+                                <div class="item  bg-dark bg-opacity-80 ">
+                                    <a class="space-y-2 text-center" href="javascript:void(0)">
+                                        <div class="text-lg">
+                                            <span class="icon text-4xl  bet-ice-hockey"></span>
+                                        </div>
+                                        <div class="text-xs">Ice Hockey</div>
+                                    </a>
+                                </div>
+
+                                <div class="item  bg-dark bg-opacity-80 ">
+                                    <a class="space-y-2 text-center" href="javascript:void(0)">
+                                        <div class="text-lg">
+                                            <span class="icon text-4xl  bet-ice-hockey"></span>
+                                        </div>
+                                        <div class="text-xs">Ice Hockey</div>
+                                    </a>
+                                </div>
+
+                                <div class="item  bg-dark bg-opacity-80 ">
+                                    <a class="space-y-2 text-center" href="javascript:void(0)">
+                                        <div class="text-lg">
+                                            <span class="icon text-4xl  bet-ice-hockey"></span>
+                                        </div>
+                                        <div class="text-xs">Ice Hockey</div>
+                                    </a>
+                                </div>
+
+                                <div class="item  bg-dark bg-opacity-80 ">
+                                    <a class="space-y-2 text-center" href="javascript:void(0)">
+                                        <div class="text-lg">
+                                            <span class="icon text-4xl  bet-ice-hockey"></span>
+                                        </div>
+                                        <div class="text-xs">Ice Hockey</div>
+                                    </a>
+                                </div>
+
+                                <div class="item  bg-dark bg-opacity-80 ">
+                                    <a class="space-y-2 text-center" href="javascript:void(0)">
+                                        <div class="text-lg">
+                                            <span class="icon text-4xl  bet-ice-hockey"></span>
+                                        </div>
+                                        <div class="text-xs">Ice Hockey</div>
+                                    </a>
+                                </div>
+
+                                <div class="item  bg-dark bg-opacity-80 ">
+                                    <a class="space-y-2 text-center" href="javascript:void(0)">
+                                        <div class="text-lg">
+                                            <span class="icon text-4xl  bet-ice-hockey"></span>
+                                        </div>
+                                        <div class="text-xs">Ice Hockey</div>
+                                    </a>
+                                </div>
+
+                                <div class="item  bg-dark bg-opacity-80 ">
+                                    <a class="space-y-2 text-center" href="javascript:void(0)">
+                                        <div class="text-lg">
+                                            <span class="icon text-4xl  bet-ice-hockey"></span>
+                                        </div>
+                                        <div class="text-xs">Ice Hockey</div>
+                                    </a>
+                                </div>
+
+                                <div class="item  bg-dark bg-opacity-80 ">
+                                    <a class="space-y-2 text-center" href="javascript:void(0)">
+                                        <div class="text-lg">
+                                            <span class="icon text-4xl  bet-ice-hockey"></span>
+                                        </div>
+                                        <div class="text-xs">Ice Hockey</div>
+                                    </a>
+                                </div>
+
+                                <div class="item  bg-dark bg-opacity-80 ">
+                                    <a class="space-y-2 text-center" href="javascript:void(0)">
+                                        <div class="text-lg">
+                                            <span class="icon text-4xl  bet-ice-hockey"></span>
+                                        </div>
+                                        <div class="text-xs">Ice Hockey</div>
+                                    </a>
+                                </div>
+
+                                <div class="item  bg-dark bg-opacity-80 ">
+                                    <a class="space-y-2 text-center" href="javascript:void(0)">
+                                        <div class="text-lg">
+                                            <span class="icon text-4xl  bet-ice-hockey"></span>
+                                        </div>
+                                        <div class="text-xs">Ice Hockey</div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="w-full text-white text-xs my-4 p-2">
+                            <table class="table w-full  shadow-sm">
+                                <thead class="border-b border-t border-gray-800">
+                                    <th class="w-1/12"></th>
+                                    <th class="w-1/4"></th>
+                                    <th class="w-20"></th>
+                                    <th class="">
+                                        <select name="" id="" class="form-select text-sm  font-extralight w-auto bg-transparent">
+                                            <option>Match Betting</option>
+                                            <option value="">Option1 </option>
+                                        </select>
+                                    </th>
+                                    <th class="">
+                                        <select name="" id="" class="form-select  text-sm  font-extralight w-auto bg-transparent">
+                                            <option>Select bet type</option>
+                                            <option value="">Option1 </option>
+                                        </select>
+                                    </th>
+                                </thead>
+
+                                <thead class="border-b border-gray-800 ">
+                                    <tr>
+                                        <th class="py-2 text-left">Time</th>
+                                        <th class="py-2 text-left">
+                                            <div>Events</div>
+                                        </th>
+                                        <th class="media-th w-10 py-2 text-left">
+
+                                        </th>
+
+                                        <th class="odds py-2 text-left">
+
+                                            <div class="flex justify-around">
+                                                <div><span>1</span></div>
+                                                <div><span>x</span></div>
+                                                <div><span>2</span></div>
+                                            </div>
+                                        </th>
+
+                                        <th class="odd py-2 text-left">
+                                            <!-- <div class="flex justify-around">-</div> -->
+                                            <div class="flex justify-around w-10/12">
+                                                <div><span>1</span></div>
+                                                <div><span>x</span></div>
+                                                <div><span>2</span></div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr class="border-b border-gray-700">
+                                        <td class="whitespace-nowrap py-3">
+                                            <div class="flex flex-col">
+                                                <span>3P</span>
+                                                <div>26 <sup class="animated infinite fadein">'</sup></div>
+                                            </div>
+                                        </td>
+
+                                        <td class="teamname py-3">
+                                            <div class="flex justify-between">
+                                                <div>
+                                                    <div class="mb-2 ">Dak Lak U19</div>
+                                                    <div class="">Binh Dinh U19</div>
+                                                </div>
+                                                <div>
+                                                    <div class="mb-2 ">0</div>
+                                                    <div class="">1</div>
+                                                </div>
+                                            </div>
+
+                                        </td>
+
+                                        <td class="media-td text-grey py-3">
+                                            <div class="mb-2 text-center">
+                                                <span class="icon bet-stadium"></span>
+                                            </div>
+                                            <div class="text-center">
+
+                                                <span class="icon bet-playtv"></span>
+                                            </div>
+                                        </td>
+
+                                        <td class="py-3">
+
+                                            <div class="flex justify-around">
+                                                <div class="odds">
+
+                                                    <div class="">
+                                                        <div class="odd-icon-wrap flex justify-center w-4 animate">
+
+                                                            <div class="icon odd-animation-up text-primary">
+
+
+                                                                <span class="icon"></span></div>
+                                                        </div>
+                                                        <div class="odd-rate">5.90</div>
+                                                    </div>
+                                                    <div class=""></div>
+                                                    <div class=""></div>
+
+                                                </div>
+
+                                                <div class="odds">
+
+                                                    <div class="">
+                                                        <div class="odd-icon-wrap flex justify-center w-4 animate">
+
+                                                            <div class="icon odd-animation-up text-primary">
+
+
+                                                                <span class="icon"></span></div>
+                                                        </div>
+                                                        <div class="odd-rate">5.90</div>
+                                                    </div>
+                                                    <div class=""></div>
+                                                    <div class=""></div>
+
+                                                </div>
+
+                                                <div class="odds">
+
+                                                    <div class="">
+                                                        <div class="odd-icon-wrap flex justify-center w-4 animate">
+
+                                                            <div class="icon odd-animation-up text-primary">
+
+
+                                                                <span class="icon"></span></div>
+                                                        </div>
+                                                        <div class="odd-rate">5.90</div>
+                                                    </div>
+                                                    <div class=""></div>
+                                                    <div class=""></div>
+
+                                                </div>
+
+                                            </div>
+                                        </td>
+
+
+
+                                        <td class="py-3">
+                                            <div class="flex relative">
+
+                                                <div class="w-10/12 flex justify-around">
+                                                    <div class="odds ">
+
+                                                        <div class="">
+                                                            <div class="odd-icon-wrap flex justify-center w-4 animate">
+
+                                                                <div class="icon odd-animation-up text-primary">
+
+
+                                                                    <span class="icon"></span></div>
+                                                            </div>
+                                                            <div class="odd-rate">5.90</div>
+                                                        </div>
+                                                        <div class=""></div>
+                                                        <div class=""></div>
+
+                                                    </div>
+
+                                                    <div class="odds">
+
+                                                        <div class="">
+                                                            <div class="odd-icon-wrap flex justify-center w-4 animate">
+
+                                                                <div class="icon odd-animation-up text-primary">
+
+
+                                                                    <span class="icon"></span></div>
+                                                            </div>
+                                                            <div class="odd-rate">5.90</div>
+                                                        </div>
+                                                        <div class=""></div>
+                                                        <div class=""></div>
+
+                                                    </div>
+
+                                                    <div class="odds">
+
+                                                        <div class="">
+                                                            <div class="odd-icon-wrap flex justify-center w-4 animate">
+
+                                                                <div class="icon odd-animation-up text-primary">
+
+
+                                                                    <span class="icon"></span></div>
+                                                            </div>
+                                                            <div class="odd-rate">5.90</div>
+                                                        </div>
+                                                        <div class=""></div>
+                                                        <div class=""></div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="more-odds ng-star-inserted absolute text-yellow right-0"> 92
+                                                    <span class="icon bet-angle-right text-white"></span></div>
+                                            </div>
+
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+
+                                <tfoot class=" border-gray-700">
+                                    <tr>
+                                        <th colspan="7 ">
+                                            <div class="w-full py-1">
+                                                <div class="flex flex-wrap justify-center items-center">
+                                                    <div class="w-full self-center lg:w-auto">
+                                                        <div class="cursor-pointer text-left" tabindex="0">
+                                                            <span class="icon bet-goalrss vertical-middle"></span>
+                                                            <div class="inline">View All
+                                                                <label class="color-link text-primary">Live</label> Events
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-auto self-center lg:hidden text-right">
+                                                        <div><label>1 </label>
+                                                            <span class="icon bet-angle-right vertical-middle"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+
+
+
+                    <div class="wrapper">
+
+                        <div class="relative flex justify-end text-2xl" id="navcontainer"></div>
+                        <div class="owl-carousel owl-three owl-theme relative mt-6" style="position: relative !important;">
+
+                            <div class="item border border-gray-700 rounded-md pt-3 pb-2 bg-gray-800 bg-opacity-10">
+                                <div class="item-wrapper h-full">
+                                    <div class="flex justify-around h-full items-center text-center text-sm text-white ">
+                                        <div class="team">
+                                            <div class="img">
+                                                <img width="55" class="h-16 w-16 mx-auto object-contain" src="https://node.ncybs.com/eventstats/logo/2530.png">
+                                            </div>
+                                            <div>
+                                                Schalke 04
+                                            </div>
+                                        </div>
+                                        <div class="leaque">
+                                            <div class="text-5xl">
+                                                <span class="icon bet-champions-league"></span>
+                                            </div>
+                                            <div class="day text-grey">Wednesday</div>
+                                            <div class="time font-bold">20:30</div>
+                                        </div>
+                                        <div class="team flex flex-col items-center justify-center">
+                                            <div class="img">
+                                                <img width="55" class="h-20 w-20 mx-auto object-contain" src="https://node.ncybs.com/eventstats/logo/2671.png">
+                                            </div>
+                                            <div class="text-center w-1/2 ">
+                                                Köln
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- odds -->
+                                    <div class="odd text-center flex bg-darker mx-auto w-10/12 border divide-x divide-gray-700 my-4 border-gray-700 text-white">
+                                        <div class="flex justify-between w-1/3 px-2 py-2 text-xs">
+                                            <div class="odd-type">1</div>
+                                            <div class="odd-rate">2.70</div>
+                                        </div>
+                                        <div class="flex justify-between w-1/3 px-2 py-2 text-xs">
+                                            <div class="odd-type">X</div>
+                                            <div class="odd-rate">2.70</div>
+                                        </div>
+                                        <div class="flex justify-between w-1/3 px-2 py-2 text-xs">
+                                            <div class="odd-type">2</div>
+                                            <div class="odd-rate">2.70</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="event-notify border-t border-gray-700 py-3 text-xs text-center text-grey">
+                                        <div class="flex items-center w-full justify-center">
+                                            <span class="icon bet-bell-alt"></span>
+                                            <span>Notify me when starts</span></div>
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item border border-gray-700 rounded-md pt-3 pb-2 bg-gray-800 bg-opacity-10">
+                                <div class="item-wrapper h-full">
+                                    <div class="flex justify-around h-full items-center text-center text-sm text-white ">
+                                        <div class="team">
+                                            <div class="img">
+                                                <img width="55" class="h-16 w-16 mx-auto object-contain" src="https://node.ncybs.com/eventstats/logo/2530.png">
+                                            </div>
+                                            <div>
+                                                Schalke 04
+                                            </div>
+                                        </div>
+                                        <div class="leaque">
+                                            <div class="text-5xl">
+                                                <span class="icon bet-champions-league"></span>
+                                            </div>
+                                            <div class="day text-grey">Wednesday</div>
+                                            <div class="time font-bold">20:30</div>
+                                        </div>
+                                        <div class="team flex flex-col items-center justify-center">
+                                            <div class="img">
+                                                <img width="55" class="h-20 w-20 mx-auto object-contain" src="https://node.ncybs.com/eventstats/logo/2671.png">
+                                            </div>
+                                            <div class="text-center w-1/2 ">
+                                                Köln
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- odds -->
+                                    <div class="odd text-center flex bg-darker mx-auto w-10/12 border divide-x divide-gray-700 my-4 border-gray-700 text-white">
+                                        <div class="flex justify-between w-1/3 px-2 py-2 text-xs">
+                                            <div class="odd-type">1</div>
+                                            <div class="odd-rate">2.70</div>
+                                        </div>
+                                        <div class="flex justify-between w-1/3 px-2 py-2 text-xs">
+                                            <div class="odd-type">X</div>
+                                            <div class="odd-rate">2.70</div>
+                                        </div>
+                                        <div class="flex justify-between w-1/3 px-2 py-2 text-xs">
+                                            <div class="odd-type">2</div>
+                                            <div class="odd-rate">2.70</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="event-notify border-t border-gray-700 py-3 text-xs text-center text-grey">
+                                        <div class="flex items-center w-full justify-center">
+                                            <span class="icon bet-bell-alt"></span>
+                                            <span>Notify me when starts</span></div>
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item border border-gray-700 rounded-md pt-3 pb-2 bg-gray-800 bg-opacity-10">
+                                <div class="item-wrapper h-full">
+                                    <div class="flex justify-around h-full items-center text-center text-sm text-white ">
+                                        <div class="team">
+                                            <div class="img">
+                                                <img width="55" class="h-16 w-16 mx-auto object-contain" src="https://node.ncybs.com/eventstats/logo/2530.png">
+                                            </div>
+                                            <div>
+                                                Schalke 04
+                                            </div>
+                                        </div>
+                                        <div class="leaque">
+                                            <div class="text-5xl">
+                                                <span class="icon bet-champions-league"></span>
+                                            </div>
+                                            <div class="day text-grey">Wednesday</div>
+                                            <div class="time font-bold">20:30</div>
+                                        </div>
+                                        <div class="team flex flex-col items-center justify-center">
+                                            <div class="img">
+                                                <img width="55" class="h-20 w-20 mx-auto object-contain" src="https://node.ncybs.com/eventstats/logo/2671.png">
+                                            </div>
+                                            <div class="text-center w-1/2 ">
+                                                Köln
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- odds -->
+                                    <div class="odd text-center flex bg-darker mx-auto w-10/12 border divide-x divide-gray-700 my-4 border-gray-700 text-white">
+                                        <div class="flex justify-between w-1/3 px-2 py-2 text-xs">
+                                            <div class="odd-type">1</div>
+                                            <div class="odd-rate">2.70</div>
+                                        </div>
+                                        <div class="flex justify-between w-1/3 px-2 py-2 text-xs">
+                                            <div class="odd-type">X</div>
+                                            <div class="odd-rate">2.70</div>
+                                        </div>
+                                        <div class="flex justify-between w-1/3 px-2 py-2 text-xs">
+                                            <div class="odd-type">2</div>
+                                            <div class="odd-rate">2.70</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="event-notify border-t border-gray-700 py-3 text-xs text-center text-grey">
+                                        <div class="flex items-center w-full justify-center">
+                                            <span class="icon bet-bell-alt"></span>
+                                            <span>Notify me when starts</span></div>
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item border border-gray-700 rounded-md pt-3 pb-2 bg-gray-800 bg-opacity-10">
+                                <div class="item-wrapper h-full">
+                                    <div class="flex justify-around h-full items-center text-center text-sm text-white ">
+                                        <div class="team">
+                                            <div class="img">
+                                                <img width="55" class="h-16 w-16 mx-auto object-contain" src="https://node.ncybs.com/eventstats/logo/2530.png">
+                                            </div>
+                                            <div>
+                                                Schalke 04
+                                            </div>
+                                        </div>
+                                        <div class="leaque">
+                                            <div class="text-5xl">
+                                                <span class="icon bet-champions-league"></span>
+                                            </div>
+                                            <div class="day text-grey">Wednesday</div>
+                                            <div class="time font-bold">20:30</div>
+                                        </div>
+                                        <div class="team flex flex-col items-center justify-center">
+                                            <div class="img">
+                                                <img width="55" class="h-20 w-20 mx-auto object-contain" src="https://node.ncybs.com/eventstats/logo/2671.png">
+                                            </div>
+                                            <div class="text-center w-1/2 ">
+                                                Köln
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- odds -->
+                                    <div class="odd text-center flex bg-darker mx-auto w-10/12 border divide-x divide-gray-700 my-4 border-gray-700 text-white">
+                                        <div class="flex justify-between w-1/3 px-2 py-2 text-xs">
+                                            <div class="odd-type">1</div>
+                                            <div class="odd-rate">2.70</div>
+                                        </div>
+                                        <div class="flex justify-between w-1/3 px-2 py-2 text-xs">
+                                            <div class="odd-type">X</div>
+                                            <div class="odd-rate">2.70</div>
+                                        </div>
+                                        <div class="flex justify-between w-1/3 px-2 py-2 text-xs">
+                                            <div class="odd-type">2</div>
+                                            <div class="odd-rate">2.70</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="event-notify border-t border-gray-700 py-3 text-xs text-center text-grey">
+                                        <div class="flex items-center w-full justify-center">
+                                            <span class="icon bet-bell-alt"></span>
+                                            <span>Notify me when starts</span></div>
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item border border-gray-700 rounded-md pt-3 pb-2 bg-gray-800 bg-opacity-10">
+                                <div class="item-wrapper h-full">
+                                    <div class="flex justify-around h-full items-center text-center text-sm text-white ">
+                                        <div class="team">
+                                            <div class="img">
+                                                <img width="55" class="h-16 w-16 mx-auto object-contain" src="https://node.ncybs.com/eventstats/logo/2530.png">
+                                            </div>
+                                            <div>
+                                                Schalke 04
+                                            </div>
+                                        </div>
+                                        <div class="leaque">
+                                            <div class="text-5xl">
+                                                <span class="icon bet-champions-league"></span>
+                                            </div>
+                                            <div class="day text-grey">Wednesday</div>
+                                            <div class="time font-bold">20:30</div>
+                                        </div>
+                                        <div class="team flex flex-col items-center justify-center">
+                                            <div class="img">
+                                                <img width="55" class="h-20 w-20 mx-auto object-contain" src="https://node.ncybs.com/eventstats/logo/2671.png">
+                                            </div>
+                                            <div class="text-center w-1/2 ">
+                                                Köln
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- odds -->
+                                    <div class="odd text-center flex bg-darker mx-auto w-10/12 border divide-x divide-gray-700 my-4 border-gray-700 text-white">
+                                        <div class="flex justify-between w-1/3 px-2 py-2 text-xs">
+                                            <div class="odd-type">1</div>
+                                            <div class="odd-rate">2.70</div>
+                                        </div>
+                                        <div class="flex justify-between w-1/3 px-2 py-2 text-xs">
+                                            <div class="odd-type">X</div>
+                                            <div class="odd-rate">2.70</div>
+                                        </div>
+                                        <div class="flex justify-between w-1/3 px-2 py-2 text-xs">
+                                            <div class="odd-type">2</div>
+                                            <div class="odd-rate">2.70</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="event-notify border-t border-gray-700 py-3 text-xs text-center text-grey">
+                                        <div class="flex items-center w-full justify-center">
+                                            <span class="icon bet-bell-alt"></span>
+                                            <span>Notify me when starts</span></div>
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="livebetting my-4 border bg-dark rounded-md border-gray-700">
+                        <div class="w-full flex flex-wrap justify-between py-3 border-b border-gray-600">
+                            <div class="w-10/12">
+
+                                <div class="text-white font-bold text-sm">
+                                    <span class="flag mr-2 TUR h-5 w-5" style="
+                                        background-image: url(https://betorder162.com/assets/img/flags/turkey.svg);
+                                    "></span>
+                                    <span _ngcontent-kbr-c165="">Turkey</span>
+                                    <span _ngcontent-kbr-c165=""> - </span>
+                                    <span _ngcontent-kbr-c165="">Super Lig</span></div>
+
+                            </div>
+
+                            <div class="text-gray-200 font-bold flex space-x-2 px-3">
+
+                                <div class="icon-wrap text-lg">
+                                    <span class="icon bet-top-leagues"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full text-white text-xs my-4 p-2">
+                            <table class="table w-full  shadow-sm">
+                                <thead class="border-b border-t border-gray-800 ">
+                                    <th class="w-1/3 text-left text-grey text-sm">
+                                        <div class="comp-date ng-star-inserted">
+                                            <span class="icon bet-calendar mr-2"></span>
+                                            <span>Wednesday</span>
+                                            <span>&nbsp;</span>
+                                            <span>20 Jan 2021</span></div>
+                                    </th>
+                                    <th class="w-auto"></th>
+                                    <th class="w-20"></th>
+                                    <th class="">
+                                        <select name="" id="" class="form-select text-sm  font-extralight w-auto bg-transparent">
+                                            <option>Match Betting</option>
+                                            <option value="">Option1 </option>
+                                        </select>
+                                    </th>
+                                    <th class="">
+                                        <select name="" id="" class="form-select  text-sm  font-extralight w-auto bg-transparent">
+                                            <option>Select bet type</option>
+                                            <option value="">Option1 </option>
+                                        </select>
+                                    </th>
+                                </thead>
+
+                                <thead class="border-b border-gray-800 ">
+                                    <tr>
+                                        <th class="py-2 text-left">Time</th>
+                                        <th class="py-2 text-left">
+                                            <div>Events</div>
+                                        </th>
+                                        <th class="media-th w-10 py-2 text-left">
+
+                                        </th>
+
+                                        <th class="odds py-2 text-left">
+
+                                            <div class="flex justify-around">
+                                                <div><span>1</span></div>
+                                                <div><span>x</span></div>
+                                                <div><span>2</span></div>
+                                            </div>
+                                        </th>
+
+                                        <th class="odd py-2 text-left">
+                                            <!-- <div class="flex justify-around">-</div> -->
+                                            <div class="flex justify-around w-10/12">
+                                                <div><span>1</span></div>
+                                                <div><span>x</span></div>
+                                                <div><span>2</span></div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr class="border-t border-gray-700">
+                                        <td class="whitespace-nowrap py-3">
+                                            <div class="flex flex-col">
+                                                <div class="text-grey text-xs font-light">16:00</div>
+                                            </div>
+                                        </td>
+
+                                        <td class="teamname py-3">
+                                            <div class="flex justify-between">
+                                                <div>
+                                                    <div class="mb-2 ">Dak Lak U19</div>
+                                                    <div class="">Binh Dinh U19</div>
+                                                </div>
+                                                <div class="hidden">
+                                                    <div class="mb-2 ">0</div>
+                                                    <div class="">1</div>
+                                                </div>
+                                            </div>
+
+                                        </td>
+
+                                        <td class="media-td p-0">
+                                            <div class="flex items-center justify-around">
+                                                <div placement="top" tooltip-class="app-tooltip" hide-delay="500" class="min-event-play ng-star-inserted w-6 h-6 rounded-full text-yellow bg-darker flex items-center justify-center"><span>1</span></div>
+                                                <!---->
+                                                <div>
+                                                    <div class="paragraph-description text-center line-h-1 mb-2 ng-star-inserted">
+                                                        <span class="icon bet-stadium"></span></div>
+                                                    <!---->
+                                                    <div class="paragraph-description text-center line-h-1 ng-star-inserted">
+                                                        <span class="icon bet-chart-bar"></span></div>
+                                                    <!---->
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <td class="py-3">
+
+                                            <div class="flex justify-around">
+                                                <div class="odds">
+
+                                                    <div class="">
+                                                        <div class="odd-icon-wrap flex justify-center w-4 animate">
+
+                                                            <div class="icon odd-animation-up text-primary">
+
+
+                                                                <span class="icon"></span></div>
+                                                        </div>
+                                                        <div class="odd-rate">5.90</div>
+                                                    </div>
+                                                    <div class=""></div>
+                                                    <div class=""></div>
+
+                                                </div>
+
+                                                <div class="odds">
+
+                                                    <div class="">
+                                                        <div class="odd-icon-wrap flex justify-center w-4 animate">
+
+                                                            <div class="icon odd-animation-up text-primary">
+
+
+                                                                <span class="icon"></span></div>
+                                                        </div>
+                                                        <div class="odd-rate">5.90</div>
+                                                    </div>
+                                                    <div class=""></div>
+                                                    <div class=""></div>
+
+                                                </div>
+
+                                                <div class="odds">
+
+                                                    <div class="">
+                                                        <div class="odd-icon-wrap flex justify-center w-4 animate">
+
+                                                            <div class="icon odd-animation-up text-primary">
+
+
+                                                                <span class="icon"></span></div>
+                                                        </div>
+                                                        <div class="odd-rate">5.90</div>
+                                                    </div>
+                                                    <div class=""></div>
+                                                    <div class=""></div>
+
+                                                </div>
+
+                                            </div>
+                                        </td>
+
+
+
+                                        <td class="py-3">
+                                            <div class="flex relative">
+
+                                                <div class="w-10/12 flex justify-around">
+                                                    <div class="odds ">
+
+                                                        <div class="">
+                                                            <div class="odd-icon-wrap flex justify-center w-4 animate">
+
+                                                                <div class="icon odd-animation-up text-primary">
+
+
+                                                                    <span class="icon"></span></div>
+                                                            </div>
+                                                            <div class="odd-rate">5.90</div>
+                                                        </div>
+                                                        <div class=""></div>
+                                                        <div class=""></div>
+
+                                                    </div>
+
+                                                    <div class="odds">
+
+                                                        <div class="">
+                                                            <div class="odd-icon-wrap flex justify-center w-4 animate">
+
+                                                                <div class="icon odd-animation-up text-primary">
+
+
+                                                                    <span class="icon"></span></div>
+                                                            </div>
+                                                            <div class="odd-rate">5.90</div>
+                                                        </div>
+                                                        <div class=""></div>
+                                                        <div class=""></div>
+
+                                                    </div>
+
+                                                    <div class="odds">
+
+                                                        <div class="">
+                                                            <div class="odd-icon-wrap flex justify-center w-4 animate">
+
+                                                                <div class="icon odd-animation-up text-primary">
+
+
+                                                                    <span class="icon"></span></div>
+                                                            </div>
+                                                            <div class="odd-rate">5.90</div>
+                                                        </div>
+                                                        <div class=""></div>
+                                                        <div class=""></div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="more-odds ng-star-inserted absolute text-yellow right-0"> 92
+                                                    <span class="icon bet-angle-right text-white"></span></div>
+                                            </div>
+
+                                        </td>
+
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="app-footer border pt-6 border-gray-700 bg-dark mt-10 rounded-md">
+                        <div class="container pb-5 lg:pb-0 px-4">
+                            <div class="flex flex-wrap lg:flex-nowrap justify-center">
+                                <div class="w-full">
+                                    <img src="https://betorder162.com/assets/img/logo-s.png" alt="Aydoğan Gaming" class="w-auto block mx-auto"></div>
+                            </div>
+                            <div class="w-full mb-2 lg:mb-3"></div>
+
+                            <div class="w-full">
+                                <div>
+                                    <ul class="list-reset text-grey font-bold text-xs flex space-x-2 justify-center">
+                                        <li><a href="/info/static?type=about">About Us</a></li>
+                                        <li><a href="/info/static?type=affiliates">Affiliates</a></li>
+                                        <li><a href="/info/static?type=generalrules">General Rules</a></li>
+                                        <li><a href="/info/static?type=privacy">Privacy Policy</a></li>
+                                        <li><a href="/info/static?type=rules">Betting Rules</a></li>
+                                        <li><a href="/info/static?type=terms">Terms &amp; Conditions</a></li>
+                                        <li><a href="/info/static?type=contact">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="w-full mb-2 lg:mb-3"></div>
+                            <div class="w-full text-xs text-grey">
+                                <p class="description text-center">
+                                    <span class="block pb-2"> All www.betorder.com products are operated by TC Entertainment N.V registered address Schout bij Nacht Doormanweg 40, Curacao. by the laws of Curacao licensed by Curacao-Egaming License number No. 1668/JAZ. Payments are processed by TC Entertainment N.V registered address Schout bij Nacht Doormanweg 40, Curacao. </span>
+                                    <i class="pt-2">Internet Gambling may be illegal in the jurisdiction in which you are located</i>
+                                </p>
+                            </div>
+                            <div class="w-full mb-2 lg:mb-3"></div>
+                            <div class="w-full">
+                                <img alt="" class="w-auto h-auto block mx-auto ng-star-inserted" src="https://betorder162.com/assets/img/payment-en.png">
+                                <!---->
+                            </div>
+
+                            <div class="w-full mb-4"></div>
+                            <div class="w-full text-xs text-grey text-justify">
+                                <p class="description"> You have the ability to accept or decline cookies. Most web browsers automativally accept cookies but if you prefer, you can usually modify your browser setting to decline cookies. If you choose to decline cookies, you
+                                    may not be able to experience all of the interactive features of the Companies sites. If you wish to block cookies, you can change your cookie settings at any time. </p>
+                            </div>
+                            <div class="w-full mb-3"></div>
+                            <div class="col-xl-2  w-full lg:w-1/4 xl:w-1/6 mx-auto text-grey">
+                                <select class="form-select bg-darker">
+                                    <option>English</option>
+                                    <option>Turkish</option>
+                                </select>
+                            </div>
+                            <div class="w-full mb-3"></div>
+
+                            <div class="w-full mb-3"></div>
+
+                            <div class="w-auto mx-auto flex items-center justify-center">
+                                <div class="footer-sign-filter cursor-pointer flex items-center justify-center">
+                                    <div id="ceg-cebf8fba-e479-4a50-a78b-35c51c1363cd" data-ceg-seal-id="cebf8fba-e479-4a50-a78b-35c51c1363cd" data-ceg-image-size="48" data-ceg-image-type="basic-small" class="footer-sign">
+                                        <div style="display: block; position: relative; overflow: hidden; max-width: 48px;min-width: 32px; background-image: url(https://cebf8fba-e479-4a50-a78b-35c51c1363cd.curacao-egaming.com/54f396e0-b046-49b1-9cb3-0c69281d7ea9-beacon.png);">
+                                            <a target="_blank" rel="nonoopener" id="ceg-seal-link" href="https://validator.curacao-egaming.com/validate?domain=betorder162.com&amp;seal_id=9140a152f85c49ad5209aba2c427e4826e84cf7ab38d34e7eeb3bd2010306187f9233afafa0e5986b3353bcd3c48c208&amp;stamp=d3e89be1a8099ebde49ca91298dd8360">
+                                                <img style="width: 100%;height: auto;" src="https://cebf8fba-e479-4a50-a78b-35c51c1363cd.curacao-egaming.com/sealassets/d3e89be1a8099ebde49ca91298dd8360-betorder162.com-9140a152f85c49ad5209aba2c427e4826e84cf7ab38d34e7eeb3bd2010306187f9233afafa0e5986b3353bcd3c48c208-c3BhY2VyLXNwcml0ZS5wbmc%3D">
+                                                <img style="min-height: 100%; position: absolute; top: 0; left: 0; max-width: none; max-height: 100%;" src="https://cebf8fba-e479-4a50-a78b-35c51c1363cd.curacao-egaming.com/sealassets/d3e89be1a8099ebde49ca91298dd8360-betorder162.com-9140a152f85c49ad5209aba2c427e4826e84cf7ab38d34e7eeb3bd2010306187f9233afafa0e5986b3353bcd3c48c208-c3ByaXRlLXNlYWwucG5n?status=valid">                                                </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="https://betorder162.com/assets/img/gamecare.png" alt="">
+                            </div>
+
+                            <div class="mb-1 w-full"></div>
+                            <div class="w-auto mx-auto">
+                                <img src="https://betorder162.com/assets/img/laliga.png" alt="" class="laliga-logo mx-auto">
+                            </div>
+                            <div class="mb-5 w-full"></div>
+                            <div class="w-full">
+                                <p class="text-xs text-center text-grey"> © 2020 - 2021 TC Entertainment NV. All rights reserved. </p>
+                            </div>
+                            <div class="w-full mb-3"></div>
+                            <div class="w-full">
+                                <div class="flex justify-center text-grey">
+                                    <a href="https://t.me/betordercom" target="_blank" class="description pr-3"><span  class="icon bet-telegram"></span> Join </a>
+                                    <a href="https://www.instagram.com/betorder" target="_blank" class="description pr-3"><span  class="icon bet-instagram"></span> Subscribe </a>
+                                    <a href="https://twitter.com/BetOrder" target="_blank" class="description pr-3"><span  class="icon bet-twitter-squared"></span> Follow </a>
+                                    <a href="https://www.facebook.com/betordercom" target="_blank" class="description"><span _ngcontent-unt-c121="" class="icon bet-facebook-squared"></span> Like </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-40 spacer w-full"></div>
+                </div>
+
+            </div>
+            <div class="w-1/4 sticky top-0  max-h-screen  nano">
+                <div class="nano-content">
+                    <div class="w-full bet-slip">
+                        <div class="bg-dark border-b-4 border-yellow pb-3 rounded-md">
+                            <nav class="flex border-l-4 border-yellow flex-col sm:flex-row justify-around text-sm px-4  ">
+                                <button class=" py-2 block hover:text-primary focus:outline-none text-white border-b-2 font-medium border-yellow ">
+                                    Bet Slip
+                                </button>
+                                <button class="w-py-2 px-6 block text-grey  hover:text-primary focus:outline-none">
+                                   My Bets
+                                </button>
+
+                            </nav>
+                            <div class="content p-2">
+                                <div class="bg-dark">
+                                    <div class="w-full flex items-center">
+                                        <label class="flex items-center">
+                                         <input type="checkbox" class="form-check h-4 w-4 mx-2"/> 
+                                         <span  class="text-sm font-light text-white">Levadeiakos - Kissamikos</span>
+                                     </label>
+                                    </div>
+
+                                    <div class="flex justify-between bets-detail-wrapper ml-8">
+                                        <div class="text-xs  text-grey">
+                                            <span>Full time</span> - <span>Draw</span>
+
+                                        </div>
+
+                                        <div class="ng-star-inserted bg-yellow text-black font-bold rounded-lg px-1 text-sm">3.50</div>
+
+                                    </div>
+
+                                    <div class="flex justify-between my-2 items-center">
+                                        <div class="text-xl text-white">X</div>
+                                        <div class="text-xs text-white">remove my betcard</div>
+                                        <div class="flex  w-1/4">
+                                            <input type="text" class="w-full appearance-none text-white rounded ring-blue-500 outline-none focus:outline-indigo-300 bg-black" />
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="mt-4 text-white text-sm ">
+                            <div class="flex justify-between  py-2">
+                                <div>Total Stake</div>
+                                <div>22 TL</div>
+                            </div>
+                            <hr class="border-grey my-1">
+                            <div class="flex justify-between py-2">
+                                <div>Potential Winnings</div>
+                                <div>74.8 TL</div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between text-white">
+                            <div class="onoffswitch flex-none">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0">
+                                <label class="onoffswitch-label py-3" for="myonoffswitch"></label>
+                            </div>
+                            <div>
+                                <span class="checktext text-xs">I accept all the odd rate changes in this coupon</span>
+
+                            </div>
+                        </div>
+                        <div class="pl-16 text-grey text-sm">
+                            <small>
+                                <span >Your bet will be placed with the most up-to-date odd rates upon your submission.</span><br >
+                                <span  class="text-yellow">Please select this option for faster bet wagering.</span></small>
+                        </div>
+
+                        <div class="flex justify-self-stretch w-full mt-4">
+                            <div><button type="button" class="bg-dark text-white  px-5 color-alternative py-2">CANCEL</button></div>
+                            <div class="place-bet ng-star-inserted">
+                                <button type="button" class="px-5 ng-star-inserted bg-primary text-white py-2">PLACE BET <span class="color-brand-two">22 TL</span></button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="h-80">1</div>
+                    <div class="h-80">2</div>
+                    <div class="h-80">4</div>
+                    <div class="h-80">5</div>
+                    <div class="h-80">6</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src='js/jquery.nanoscroller.js'></script>
+
+    <!-- Nano scroller -->
+    <script>
+        $(".nano").nanoScroller();
+    </script>
+
+    <script src="lib/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var owl = $('.owl-one');
+            var owlTwo = $('.owl-two');
+            var owlThree = $('.owl-three');
+
+
+            owl.owlCarousel({
+                margin: 10,
+                nav: false,
+                navContainerClass: "nav-owl w-full flex justify-between absolute top-0 h-full items-center",
+                loop: true,
+                navClass: ['owl-prev h-5 w-5 font-bold text-white', 'owl-next h-5 w-5 font-bold text-white'],
+                dotsClass: "  w-full flex justify-end -mt-10 z-50 absolute dot",
+                dotClass: "w-5 h-5  bg-secondary mx-1",
+                autoplay: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            });
+
+            //owl-two
+            owlTwo.owlCarousel({
+                margin: 10,
+                nav: true,
+                dots: false,
+                navContainerClass: "nav-owl w-full flex justify-between absolute top-0 h-full items-center",
+                loop: true,
+                navClass: ['owl-prev h-5 w-5 font-bold text-white', 'owl-next h-5 w-5 font-bold text-white'],
+                dotsClass: "  w-full flex justify-end -mt-10 z-50 absolute dot",
+                dotClass: "w-5 h-5  bg-secondary mx-1",
+                autoplay: false,
+                responsive: {
+                    0: {
+                        items: 4
+                    },
+                    600: {
+                        items: 8
+                    },
+                    1000: {
+                        items: 10
+                    }
+                }
+            })
+
+
+            //owl-two
+            owlThree.owlCarousel({
+                margin: 10,
+                nav: true,
+                dots: false,
+                navContainerClass: "nav-owl w-full flex justify-between absolute top-0 h-full items-center",
+                loop: true,
+                navContainer: "#navcontainer",
+                navClass: ['owl-prev h-5 w-5 font-bold text-white', 'owl-next h-5 w-5 font-bold text-white'],
+                dotsClass: "  w-full flex justify-end -mt-10 z-50 absolute dot",
+                dotClass: "w-5 h-5  bg-secondary mx-1",
+                autoplay: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 2
+                    }
+                }
+            })
+
+        })
+    </script>
 </body>
 
 </html>
