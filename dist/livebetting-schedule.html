@@ -5,13 +5,1084 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Nano scroller css -->
+    <link rel="stylesheet" href="css/nanoscroller.css" />
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- ICONS Stylesheet -->
+    <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+    <style>
+        .nano .nano-content {
+            padding: 10px;
+        }
+        
+        .bet-goalrss::before {
+            content: "";
+            color: white
+        }
+        
+        .nano .nano-slider {
+            background: #af2c2c;
+        }
+        
+        .bet-top-leagues:before {
+            content: "";
+        }
+        
+        .icon:after,
+        .icon:before {
+            font-family: beticon;
+            font-style: normal;
+            font-weight: 400;
+            display: inline-block;
+            text-decoration: inherit;
+            width: 1em;
+            margin-right: .2em;
+            text-align: center;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1em;
+            margin-left: .2em;
+            -webkit-font-smoothing: antialiased
+        }
+        
+        .dot .active {
+            background: rebeccapurple !important;
+        }
+        
+        .disabled {
+            display: none !important;
+        }
+        
+        .home-win-rate {
+            width: 39px;
+            font-size: 13px;
+            font-weight: 400;
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 50%;
+            position: relative;
+            padding: 11px 0;
+            line-height: 1;
+            text-align: center;
+            color: #fff;
+            border-color: rgb(16, 23, 218);
+        }
+    </style>
 </head>
 
-<body class="antialiased bg-white overflow-x-hidden">
+<body class="antialiased bg-black lg:overflow-hidden">
+    <header class="w-full fixed top-0 z-50">
+        <div class="top bg-primary py-4 w-full ">
+            <div class="container mx-auto px-4">
 
+
+                <div class="flex flex-wrap items-center justify-between" x-data="{menuOpen:false}">
+
+
+                    <!-- Mobile Menu icon -->
+                    <div class="humberger text-white lg:hidden  text-lg" @click="menuOpen=true">
+                        <span class="icon bet-menu vertical-bottom"></span>
+                    </div>
+                    <!-- Mobile Menu -->
+                    <div class="absolute overflow-auto top-0 w-3/4 z-50 left-0 bg-dark text-white h-screen" x-show="menuOpen" @click.away="menuOpen=false" style="display: none;">
+                        <div class="w-full py-2 ">
+                            <div class="w-full ">
+                                <!-- <div class="flex items-center px-4 bg-black border-darker text-white">
+                                    <i class="bet-search icon absolute left-1 mx-2 top-auto"></i>
+                                    <input type="search" placeholder="search" class="w-full px-6 py-2  bg-transparent">
+                                </div> -->
+                                <div class="flex flex-col">
+                                    <div class="flex">
+                                        <input type="text" class="form-input" placeholder="Arama">
+                                        <select class="form-select">
+                                          <option>Tarih -Tum Liste</option>
+                                         
+                                      </select>
+                                        <select class="form-select">
+                                        <option>Saat -Hepsi</option>
+                                       
+                                    </select>
+
+                                        <button>
+                                        
+                                    </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-item">
+                                <div class="title">
+                                    <h4 class="text-sm px-3 font-bold text-gray-300 mt-3 mb-2">HOME MENU</h4>
+                                </div>
+
+                                <ul class="mbl-menu pl-3 list-reset flex flex-col">
+                                    <li class="py-3  border-b border-gray-700 text-lg pl-2 ng-star-inserted active"><span class="icon pr-2 bet-tennis"></span><span>Sports</span></li>
+                                    <li class="py-3  border-b border-gray-700 text-lg pl-2 ng-star-inserted"><span class="icon pr-2 bet-soccer-shoe"></span><span>In-Play</span></li>
+                                    <li class="py-3  border-b border-gray-700 text-lg pl-2 ng-star-inserted"><span class="icon pr-2 bet-slot-machine"></span><span>Slot</span></li>
+
+                                    <li class="py-3  border-b border-gray-700 text-lg pl-2 ng-star-inserted"><span class="icon pr-2 bet-cherry"></span><span>Casino</span></li>
+                                    <li class="py-3  border-b border-gray-700 text-lg pl-2 ng-star-inserted"><span class="icon pr-2 bet-gamepad"></span><span>Virtuals</span></li>
+                                    <li class="py-3  border-b border-gray-700 text-lg pl-2 ng-star-inserted"><span class="icon pr-2 bet-cards-double"></span><span>Poker</span></li>
+                                    <li class="py-3  border-b border-gray-700 text-lg pl-2 ng-star-inserted"><span class="icon pr-2 bet-cards-double"></span><span>Bingo</span></li>
+                                    <li class="py-3  border-b border-gray-700 text-lg pl-2 ng-star-inserted"><span class="icon pr-2 bet-gift"></span><span>Bonuses</span></li>
+                                    <!---->
+                                </ul>
+                            </div>
+
+                            <div class="sidebar-item">
+                                <div class="title uppercase">
+                                    <h4 class="text-sm px-3 font-bold text-gray-300 mt-3 mb-2">Bet Services</h4>
+                                </div>
+
+                                <ul class="mbl-menu pl-3 list-reset flex flex-col">
+                                    <li class="py-3  border-b border-gray-700 text-lg pl-2 ng-star-inserted active">
+
+                                        <span>Results</span></li>
+                                    <li class="py-3  border-b border-gray-700 text-lg pl-2 ng-star-inserted">
+
+                                        <span>Promotion</span></li>
+                                    <li class="py-3  border-b border-gray-700 text-lg pl-2 ng-star-inserted">
+
+                                        <span>Live Support</span></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="logo">
+                        <a href="/">
+                            <img src="https://betorder164.com/assets/img/logo.png" class=" w-28" alt="Betorder"></a>
+                    </div>
+                    <div class="list hidden lg:block">
+                        <ul class="list-reset flex space-x-4 text-white font-semibold">
+                            <li>
+                                <a href="">Sports</a>
+                            </li>
+                            <li>
+                                <a href="">In-Play</a>
+                            </li>
+                            <li>
+                                <a href="">Slot</a>
+                            </li>
+                            <li>
+                                <a href="">Casino</a>
+                            </li>
+                            <li>
+                                <a href="">Virtuals</a>
+                            </li>
+                            <li>
+                                <a href="">Poker</a>
+                            </li>
+                            <li>
+                                <a href="">Bingo</a>
+                            </li>
+                            <li>
+                                <a href="">Bonuses</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="login">
+                        <div class="top-right flex space-x-4 tex-white items-center text-sm">
+                            <a href="" class="font-semibold text-white lg:hidden">Join</a>
+                            <a href="" class="font-semibold text-white">Login</a>
+                            <button class="appearance-none px-3 hidden lg:block py-1 bg-secondary font-semibold text-white">Register Now</button>
+                            <button class="appearance-none px-3 hidden lg:block  py-1 bg-yellow font-semibold text-white">Live Support</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="bottom bg-dark py-2 w-full shadow-md">
+            <div class="px-4 mx-auto">
+                <div class="lg:hidden h-10 scrool-menu  w-full z-40 mb-2 ng-star-inserted">
+                    <ul class="live-calendar-list-one bg-dark text-gray-300 space-x-6 h-20 flex  overflow-x-auto overflow-y-hidden transition-all">
+                        <li>
+                            <div>
+                                <div><span class="icon bet-goal"></span></div>
+                                <div>In-Play</div>
+                            </div>
+                        </li>
+                        <li routerlinkactive="active" class="ng-star-inserted">
+                            <div>
+                                <div><span class="bet-soccer icon"></span></div>
+                                <div>Football</div>
+                            </div>
+                        </li>
+                        <li routerlinkactive="active" class="ng-star-inserted">
+                            <div>
+                                <div><span class="bet-ice-hockey icon"></span></div>
+                                <div>Ice Hockey</div>
+                            </div>
+                        </li>
+
+                        <li routerlinkactive="active" class="ng-star-inserted">
+                            <div>
+                                <div><span class="bet-bandy icon"></span></div>
+                                <div>Bandy </div>
+                            </div>
+                        </li>
+                        <li routerlinkactive="active" class="ng-star-inserted">
+                            <div>
+                                <div><span class="bet-winter-sports icon"></span></div>
+                                <div>Winter Sports</div>
+                            </div>
+                        </li>
+                        <li routerlinkactive="active" class="ng-star-inserted">
+                            <div>
+                                <div><span class="bet-cycling icon"></span></div>
+                                <div>Cycling</div>
+                            </div>
+                        </li>
+                        <li routerlinkactive="active" class="ng-star-inserted">
+                            <div>
+                                <div><span class="bet-football icon"></span></div>
+                                <div>American Football </div>
+                            </div>
+                        </li>
+                        <li routerlinkactive="active" class="ng-star-inserted">
+                            <div>
+                                <div><span class="bet-aussie-rules icon"></span></div>
+                                <div>Australian Football</div>
+                            </div>
+                        </li>
+                        <li routerlinkactive="active" class="ng-star-inserted">
+                            <div>
+                                <div><span class="bet-table-tennis icon"></span></div>
+                                <div>Table Tennis </div>
+                            </div>
+                        </li>
+                        <li routerlinkactive="active" class="ng-star-inserted">
+                            <div>
+                                <div><span class="bet-futsal icon"></span></div>
+                                <div>Futsal </div>
+                            </div>
+                        </li>
+                        <li routerlinkactive="active" class="ng-star-inserted">
+                            <div>
+                                <div><span class="bet-volleyball icon"></span></div>
+                                <div>Volleyball</div>
+                            </div>
+                        </li>
+
+                        <li routerlinkactive="active" class="ng-star-inserted">
+                            <div>
+                                <div><span class="bet-bowls icon"></span></div>
+                                <div>Bowls</div>
+                            </div>
+                        </li>
+                        <li routerlinkactive="active" class="ng-star-inserted">
+                            <div>
+                                <div><span class="bet-squash icon"></span></div>
+                                <div>Squash </div>
+                            </div>
+                        </li>
+                        <li routerlinkactive="active" class="ng-star-inserted">
+                            <div>
+                                <div><span class="bet-mma icon"></span></div>
+                                <div>MMA</div>
+                            </div>
+                        </li>
+                        <li routerlinkactive="active" class="ng-star-inserted">
+                            <div>
+                                <div><span class="bet-sailing icon"></span></div>
+                                <div>Sailing</div>
+                            </div>
+                        </li>
+                        <li routerlinkactive="active" class="ng-star-inserted">
+                            <div>
+                                <div><span class="bet-motor-sport icon"></span></div>
+                                <div>Motor sport</div>
+                            </div>
+                        </li>
+                        <li routerlinkactive="active" class="ng-star-inserted">
+                            <div>
+                                <div><span class="bet-alpine-skiing icon"></span></div>
+                                <div>Alpine Skiing</div>
+                            </div>
+                        </li>
+                        <!---->
+                    </ul>
+                </div>
+
+                <div class="  space-x-4 items-center hidden lg:flex  ">
+
+                    <div class="w-auto bg-transparent ">
+                        <!-- <div class="flex items-center px-4 bg-black border-darker text-white">
+                            <i class="bet-search icon absolute left-1 mx-2 top-auto"></i>
+                            <input type="search" placeholder="search" class="w-full px-6 py-2  bg-transparent">
+                        </div> -->
+                        <div class="flex flex-col text-sm divide-y">
+                            <div class="flex divide-x ">
+                                <input type="text" class="form-input" placeholder="Arama">
+                                <select class="form-select">
+                                  <option>Tarih -Tum Liste</option>
+                                 
+                              </select>
+                                <select class="form-select">
+                                <option>Saat -Hepsi</option>
+                               
+                            </select>
+
+                                <button class="text-white bg-red-500 text- p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                            </button>
+                            </div>
+
+                            <div class="flex">
+                                <div class="flex w-1/3 space-x-3 text-gray-200 items-center">
+                                    <i class="far fa-futbol"></i>
+                                    <span class="font-light text-sm">Football</span>
+                                </div>
+
+                                <div class="bg-red-500 w-1/3 text-center px-3  text-white text-sm flex items-center">
+                                    <span>Toplam mac Sayisi</span>
+                                    <span class="bg-dark p-1">244</span>
+                                </div>
+                                <select class="form-select w-1/3 bg-white  text-gray-800">
+                                <option>Tum Linger</option>
+                               
+                            </select>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="w-2/3 hidden lg:block">
+                        <ul class="flex space-x-2 text-gray-200 items-center">
+                            <li><a href="">Sports Betting</a></li>
+                            <li><a href="">FootBall</a></li>
+                            <li><a href="">Tennis</a></li>
+                            <li><a href="">Basket Ball</a></li>
+                            <li><a href="">Results</a></li>
+                            <li><a href="">Promotions</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="w-1/4 flex justify-end ">
+
+                        <div class="flex relative text-white px-2 space-x-2 text-sm" x-data="{open:false}">
+                            <span class="text-grey">Language</span>
+                            <div class="bg-dark absolute top-8 right-0 w-auto text-white shadow-2xl " x-show="open" @click.away="open=false" style="display: none;">
+                                <ul class="divide-y divide-gray-700
+           ">
+                                    <li class="bg-white bg-opacity-10 py-2 px-2 text-green-500">
+                                        English <svg class="text-green-500 h-5 w-5 mr-3               inline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    </li>
+                                    <li class="bg-white bg-opacity-10 py-2 px-2 ">
+                                        English <svg class="text-transparent h-5 w-5 mr-3               inline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span @click="open=!open" class="cursor-pointer text-sm font-bold ml-2">English</span>
+                            <span class="text-white h-3 w-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 align-middle"><path d="M6 9l6 6 6-6"></path></svg>
+                            </span>
+                        </div>
+
+                        <div class="flex relative text-white px-2 space-x-2 text-sm" x-data="{open:false}">
+                            <span class="text-grey">Odds</span>
+                            <div class="bg-dark absolute top-8 right-0 w-auto text-white shadow-2xl " x-show="open" @click.away="open=false" style="display: none;">
+                                <ul class="divide-y divide-gray-700
+           ">
+                                    <li class="bg-white bg-opacity-10 py-2 px-2 text-green-500 whitespace-nowrap truncate">
+                                        Fraction <svg class="text-green-500 h-5 w-5 mr-3               inline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    </li>
+                                    <li class="bg-white bg-opacity-10 py-2 px-2 whitespace-nowrap truncate">
+                                        Decimal <svg class="text-transparent h-5 w-5 mr-3               inline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    </li>
+                                    <li class="bg-white bg-opacity-10 py-2 px-2 whitespace-nowrap truncate">
+                                        American <svg class="text-transparent h-5 w-5 mr-3               inline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span @click="open=!open" class="cursor-pointer text-sm font-bold ml-2">Decimal</span>
+                            <span class="text-white h-3 w-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 align-middle"><path d="M6 9l6 6 6-6"></path></svg>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="flex flex-wrap lg:flex-nowrap mt-32">
+
+            <div class="w-full lg:w-3/4  ">
+
+                <div class=" text-gray-300 bg-dark mx-4 mt-10 border rounded border-gray-700">
+
+
+                    <div class="w-full text-gray-200">
+                        <div class="owl-carousel owl-two owl-theme relative mt-6 px-2" style="position: relative !important;">
+
+                            <div class="item  bg-dark bg-opacity-80 ">
+                                <a class="space-y-2 text-center" href="javascript:void(0)">
+                                    <div class="text-lg">
+                                        <span class="icon text-3xl  bet-ice-hockey"></span>
+                                    </div>
+                                    <div class="text-xs font-extralight">Ice Hockey</div>
+                                </a>
+                            </div>
+
+                            <div class="item  bg-dark bg-opacity-80 ">
+                                <a class="space-y-2 text-center" href="javascript:void(0)">
+                                    <div class="text-lg">
+                                        <span class="icon text-4xl  icon bet-soccer"></span>
+                                    </div>
+                                    <div class="text-xs">Football</div>
+                                </a>
+                            </div>
+
+                            <div class="item  bg-dark bg-opacity-80 ">
+                                <a class="space-y-2 text-center" href="javascript:void(0)">
+                                    <div class="text-lg">
+                                        <span class="icon text-4xl  bet-ice-hockey"></span>
+                                    </div>
+                                    <div class="text-xs">Ice Hockey</div>
+                                </a>
+                            </div>
+
+                            <div class="item  bg-dark bg-opacity-80 ">
+                                <a class="space-y-2 text-center" href="javascript:void(0)">
+                                    <div class="text-lg">
+                                        <span class="icon text-4xl  bet-ice-hockey"></span>
+                                    </div>
+                                    <div class="text-xs">Ice Hockey</div>
+                                </a>
+                            </div>
+
+                            <div class="item  bg-dark bg-opacity-80 ">
+                                <a class="space-y-2 text-center" href="javascript:void(0)">
+                                    <div class="text-lg">
+                                        <span class="icon text-4xl  bet-ice-hockey"></span>
+                                    </div>
+                                    <div class="text-xs">Ice Hockey</div>
+                                </a>
+                            </div>
+
+                            <div class="item  bg-dark bg-opacity-80 ">
+                                <a class="space-y-2 text-center" href="javascript:void(0)">
+                                    <div class="text-lg">
+                                        <span class="icon text-4xl  bet-ice-hockey"></span>
+                                    </div>
+                                    <div class="text-xs">Ice Hockey</div>
+                                </a>
+                            </div>
+
+                            <div class="item  bg-dark bg-opacity-80 ">
+                                <a class="space-y-2 text-center" href="javascript:void(0)">
+                                    <div class="text-lg">
+                                        <span class="icon text-4xl  bet-ice-hockey"></span>
+                                    </div>
+                                    <div class="text-xs">Ice Hockey</div>
+                                </a>
+                            </div>
+
+                            <div class="item  bg-dark bg-opacity-80 ">
+                                <a class="space-y-2 text-center" href="javascript:void(0)">
+                                    <div class="text-lg">
+                                        <span class="icon text-4xl  bet-ice-hockey"></span>
+                                    </div>
+                                    <div class="text-xs">Ice Hockey</div>
+                                </a>
+                            </div>
+
+                            <div class="item  bg-dark bg-opacity-80 ">
+                                <a class="space-y-2 text-center" href="javascript:void(0)">
+                                    <div class="text-lg">
+                                        <span class="icon text-4xl  bet-ice-hockey"></span>
+                                    </div>
+                                    <div class="text-xs">Ice Hockey</div>
+                                </a>
+                            </div>
+
+                            <div class="item  bg-dark bg-opacity-80 ">
+                                <a class="space-y-2 text-center" href="javascript:void(0)">
+                                    <div class="text-lg">
+                                        <span class="icon text-4xl  bet-ice-hockey"></span>
+                                    </div>
+                                    <div class="text-xs">Ice Hockey</div>
+                                </a>
+                            </div>
+
+                            <div class="item  bg-dark bg-opacity-80 ">
+                                <a class="space-y-2 text-center" href="javascript:void(0)">
+                                    <div class="text-lg">
+                                        <span class="icon text-4xl  bet-ice-hockey"></span>
+                                    </div>
+                                    <div class="text-xs">Ice Hockey</div>
+                                </a>
+                            </div>
+
+                            <div class="item  bg-dark bg-opacity-80 ">
+                                <a class="space-y-2 text-center" href="javascript:void(0)">
+                                    <div class="text-lg">
+                                        <span class="icon text-4xl  bet-ice-hockey"></span>
+                                    </div>
+                                    <div class="text-xs">Ice Hockey</div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class=" max-h-screen  nano border-t border-gray-700 w-full" style="overflow:auto">
+
+                        <div class="nano-content">
+                            <div class="w-full overflow-x-auto">
+                                <table class="table w-full text-sm">
+                                    <tbody class="border-separate">
+                                        <tr class="border-b border-gray-800">
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3">Football</td>
+                                            <td class="px-4 w-1/4 whitespace-nowrap py-3 font-bold te3xt-gray-100">Adamawa United FC - Enyimba Aba</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">Azerbaijan Cup</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">25 Jan - 13:00</td>
+                                            <td class="color-brand-two w-2/5 whitespace-nowrap py-3"><span class="ng-star-inserted uppercase text-yellow">UPCOMING_LIVE_REMAINING_TEXT</span>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr class="border-b border-gray-800">
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3">Football</td>
+                                            <td class="px-4 w-1/4 whitespace-nowrap py-3 font-bold te3xt-gray-100">Adamawa United FC - Enyimba Aba</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">Azerbaijan Cup</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">25 Jan - 13:00</td>
+                                            <td class="color-brand-two w-2/5 whitespace-nowrap py-3"><span class="ng-star-inserted uppercase text-yellow">UPCOMING_LIVE_REMAINING_TEXT</span>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr class="border-b border-gray-800">
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3">Football</td>
+                                            <td class="px-4 w-1/4 whitespace-nowrap py-3 font-bold te3xt-gray-100">Adamawa United FC - Enyimba Aba</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">Azerbaijan Cup</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">25 Jan - 13:00</td>
+                                            <td class="color-brand-two w-2/5 whitespace-nowrap py-3"><span class="ng-star-inserted uppercase text-yellow">UPCOMING_LIVE_REMAINING_TEXT</span>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr class="border-b border-gray-800">
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3">Football</td>
+                                            <td class="px-4 w-1/4 whitespace-nowrap py-3 font-bold te3xt-gray-100">Adamawa United FC - Enyimba Aba</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">Azerbaijan Cup</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">25 Jan - 13:00</td>
+                                            <td class="color-brand-two w-2/5 whitespace-nowrap py-3"><span class="ng-star-inserted uppercase text-yellow">UPCOMING_LIVE_REMAINING_TEXT</span>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr class="border-b border-gray-800">
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3">Football</td>
+                                            <td class="px-4 w-1/4 whitespace-nowrap py-3 font-bold te3xt-gray-100">Adamawa United FC - Enyimba Aba</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">Azerbaijan Cup</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">25 Jan - 13:00</td>
+                                            <td class="color-brand-two w-2/5 whitespace-nowrap py-3"><span class="ng-star-inserted uppercase text-yellow">UPCOMING_LIVE_REMAINING_TEXT</span>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr class="border-b border-gray-800">
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3">Football</td>
+                                            <td class="px-4 w-1/4 whitespace-nowrap py-3 font-bold te3xt-gray-100">Adamawa United FC - Enyimba Aba</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">Azerbaijan Cup</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">25 Jan - 13:00</td>
+                                            <td class="color-brand-two w-2/5 whitespace-nowrap py-3"><span class="ng-star-inserted uppercase text-yellow">UPCOMING_LIVE_REMAINING_TEXT</span>
+
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b border-gray-800">
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3">Football</td>
+                                            <td class="px-4 w-1/4 whitespace-nowrap py-3 font-bold te3xt-gray-100">Adamawa United FC - Enyimba Aba</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">Azerbaijan Cup</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">25 Jan - 13:00</td>
+                                            <td class="color-brand-two w-2/5 whitespace-nowrap py-3"><span class="ng-star-inserted uppercase text-yellow">UPCOMING_LIVE_REMAINING_TEXT</span>
+
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b border-gray-800">
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3">Football</td>
+                                            <td class="px-4 w-1/4 whitespace-nowrap py-3 font-bold te3xt-gray-100">Adamawa United FC - Enyimba Aba</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">Azerbaijan Cup</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">25 Jan - 13:00</td>
+                                            <td class="color-brand-two w-2/5 whitespace-nowrap py-3"><span class="ng-star-inserted uppercase text-yellow">UPCOMING_LIVE_REMAINING_TEXT</span>
+
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b border-gray-800">
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3">Football</td>
+                                            <td class="px-4 w-1/4 whitespace-nowrap py-3 font-bold te3xt-gray-100">Adamawa United FC - Enyimba Aba</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">Azerbaijan Cup</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">25 Jan - 13:00</td>
+                                            <td class="color-brand-two w-2/5 whitespace-nowrap py-3"><span class="ng-star-inserted uppercase text-yellow">UPCOMING_LIVE_REMAINING_TEXT</span>
+
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b border-gray-800">
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3">Football</td>
+                                            <td class="px-4 w-1/4 whitespace-nowrap py-3 font-bold te3xt-gray-100">Adamawa United FC - Enyimba Aba</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">Azerbaijan Cup</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">25 Jan - 13:00</td>
+                                            <td class="color-brand-two w-2/5 whitespace-nowrap py-3"><span class="ng-star-inserted uppercase text-yellow">UPCOMING_LIVE_REMAINING_TEXT</span>
+
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b border-gray-800">
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3">Football</td>
+                                            <td class="px-4 w-1/4 whitespace-nowrap py-3 font-bold te3xt-gray-100">Adamawa United FC - Enyimba Aba</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">Azerbaijan Cup</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">25 Jan - 13:00</td>
+                                            <td class="color-brand-two w-2/5 whitespace-nowrap py-3"><span class="ng-star-inserted uppercase text-yellow">UPCOMING_LIVE_REMAINING_TEXT</span>
+
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b border-gray-800">
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3">Football</td>
+                                            <td class="px-4 w-1/4 whitespace-nowrap py-3 font-bold te3xt-gray-100">Adamawa United FC - Enyimba Aba</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">Azerbaijan Cup</td>
+                                            <td class="color-alternative w-1/4 whitespace-nowrap py-3 text-gray-400">25 Jan - 13:00</td>
+                                            <td class="color-brand-two w-2/5 whitespace-nowrap py-3"><span class="ng-star-inserted uppercase text-yellow">UPCOMING_LIVE_REMAINING_TEXT</span>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+
+
+                            <div class="lg:h-40"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <div class="w-full lg:w-1/4 lg:sticky lg:top-0  max-h-screen  nano">
+                <div class="nano-content">
+                    <div class="w-full bet-slip p-3">
+                        <div class="bg-dark border-b-4 border-yellow pb-3 rounded-md">
+                            <nav class="flex border-l-4 border-yellow flex-col sm:flex-row justify-around text-sm px-4  ">
+                                <button class=" py-2 block hover:text-primary focus:outline-none text-white border-b-2 font-medium border-yellow ">
+                                    Bet Slip
+                                </button>
+                                <button class="w-py-2 px-6 block text-grey  hover:text-primary focus:outline-none">
+                                   My Bets
+                                </button>
+
+                            </nav>
+                            <div class="content p-2">
+                                <div class="bg-dark">
+                                    <div class="w-full flex items-center">
+                                        <label class="flex items-center">
+                                         <input type="checkbox" class="form-check h-4 w-4 mx-2"/> 
+                                         <span  class="text-sm font-light text-white">Levadeiakos - Kissamikos</span>
+                                     </label>
+                                    </div>
+
+                                    <div class="flex justify-between bets-detail-wrapper ml-8">
+                                        <div class="text-xs  text-grey">
+                                            <span>Full time</span> - <span>Draw</span>
+
+                                        </div>
+
+                                        <div class="ng-star-inserted bg-yellow text-black font-bold rounded-lg px-1 text-sm">3.50</div>
+
+                                    </div>
+
+                                    <div class="flex justify-between my-2 items-center">
+                                        <div class="text-xl text-white">X</div>
+                                        <div class="text-xs text-white">remove my betcard</div>
+                                        <div class="flex  w-1/4">
+                                            <input type="text" class="w-full appearance-none text-white rounded ring-blue-500 outline-none focus:outline-indigo-300 bg-black" />
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="mt-4 text-white text-sm ">
+                            <div class="flex justify-between  py-2">
+                                <div>Total Stake</div>
+                                <div>22 TL</div>
+                            </div>
+                            <hr class="border-grey my-1">
+                            <div class="flex justify-between py-2">
+                                <div>Potential Winnings</div>
+                                <div>74.8 TL</div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between text-white">
+                            <div class="switch relative inline-block flex-none w-10">
+                                <input type="checkbox" id="switch-1" class="switch-input hidden" />
+                                <label for="switch-1" class="switch-label"></label>
+                            </div>
+                            <div>
+                                <span class="checktext text-xs">I accept all the odd rate changes in this coupon</span>
+
+                            </div>
+                        </div>
+                        <div class="pl-16 text-grey text-sm">
+                            <small>
+                                <span >Your bet will be placed with the most up-to-date odd rates upon your submission.</span><br >
+                                <span  class="text-yellow">Please select this option for faster bet wagering.</span></small>
+                        </div>
+
+                        <div class="flex justify-self-stretch w-full mt-4">
+                            <div><button type="button" class="bg-dark text-white  px-5 color-alternative py-2">CANCEL</button></div>
+                            <div class="place-bet ng-star-inserted">
+                                <button type="button" class="px-5 ng-star-inserted bg-primary text-white py-2">PLACE BET <span class="color-brand-two">22 TL</span></button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="my-4 p-3">
+                        <div class="owl-carousel fadeOut owl-theme">
+                            <div class="item h-64 w-full bg-dark border border-gray-700 p-2">
+                                <div class="flex flex-col">
+                                    <div class="relative">
+                                        <img class="h-full w-full object-fit" src="https://betorder164.com/assets/img/slider/mini-casino/en/casino-2.jpg" />
+                                        <div class="absolute right-3 top-2 text-white category bg-black bg-opacity-50 rounded px-3 py-1 text-sm">Casino</div>
+                                    </div>
+
+                                    <div class="flex flex-wrap justify-between mt-4 p-3 w-full">
+                                        <div class="w-1/2 text-white space-y-1 text-sm">
+                                            <div class="title font-bold">Craps Live</div>
+                                            <div class="desc">Evolution Gaming</div>
+                                        </div>
+                                        <div class="w-1/2 ng-star-inserted flex-none flex justify-end">
+
+                                            <button tabindex="0" class="bg-primary w-3/4 px-3 py-1 text-sm font-thin text-white">Play Now</button></div>
+                                        <!---->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item h-64 w-full bg-dark border border-gray-700 p-2">
+                                <div class="flex flex-col">
+                                    <div class="relative">
+                                        <img class="h-full w-full object-fit" src="https://betorder164.com/assets/img/slider/mini-casino/en/casino-2.jpg" />
+                                        <div class="absolute right-3 top-2 text-white category bg-black bg-opacity-50 rounded px-3 py-1 text-sm">Casino</div>
+                                    </div>
+
+                                    <div class="flex flex-wrap justify-between mt-4 p-3 w-full">
+                                        <div class="w-1/2 text-white space-y-1 text-sm">
+                                            <div class="title font-bold">Craps Live</div>
+                                            <div class="desc">Evolution Gaming</div>
+                                        </div>
+                                        <div class="w-1/2 ng-star-inserted flex-none flex justify-end">
+
+                                            <button tabindex="0" class="bg-primary w-3/4 px-3 py-1 text-sm font-thin text-white">Yesy Now</button></div>
+                                        <!---->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item h-64 w-full bg-dark border border-gray-700 p-2">
+                                <div class="flex flex-col">
+                                    <div class="relative">
+                                        <img class="h-full w-full object-fit" src="https://betorder164.com/assets/img/slider/mini-casino/en/casino-2.jpg" />
+                                        <div class="absolute right-3 top-2 text-white category bg-black bg-opacity-50 rounded px-3 py-1 text-sm">Casino</div>
+                                    </div>
+
+                                    <div class="flex flex-wrap justify-between mt-4 p-3 w-full">
+                                        <div class="w-1/2 text-white space-y-1 text-sm">
+                                            <div class="title font-bold">Craps Live</div>
+                                            <div class="desc">Evolution Gaming</div>
+                                        </div>
+                                        <div class="w-1/2 ng-star-inserted flex-none flex justify-end">
+
+                                            <button tabindex="0" class="bg-primary w-3/4 px-3 py-1 text-sm font-thin text-white">Get Now</button></div>
+                                        <!---->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item h-64 w-full bg-dark border border-gray-700 p-2">
+                                <div class="flex flex-col">
+                                    <div class="relative">
+                                        <img class="h-full w-full object-fit" src="https://betorder164.com/assets/img/slider/mini-casino/en/casino-2.jpg" />
+                                        <div class="absolute right-3 top-2 text-white category bg-black bg-opacity-50 rounded px-3 py-1 text-sm">Casino</div>
+                                    </div>
+
+                                    <div class="flex flex-wrap justify-between mt-4 p-3 w-full">
+                                        <div class="w-1/2 text-white space-y-1 text-sm">
+                                            <div class="title font-bold">Craps Live</div>
+                                            <div class="desc">Evolution Gaming</div>
+                                        </div>
+                                        <div class="w-1/2 ng-star-inserted flex-none flex justify-end">
+
+                                            <button tabindex="0" class="bg-primary w-3/4 px-3 py-1 text-sm font-thin text-white">Catch Now</button></div>
+                                        <!---->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="p-3 my-4">
+                        <div class="card border border-gray-700 bg-dark shadow-sm py-3 rounded-md text-gray-200">
+                            <div class="header border-b py-3 flex items-center justify-between">
+                                <h4 class=" font-bold text-sm border-l-4 border-primary pl-4">Live Calender</h4>
+                                <span class="icon mr-3">
+                                    <span class="icon bet-rss"></span>
+                                </span>
+                            </div>
+                            <div class="body p-2">
+                                <div class="w-full text-gray-200">
+                                    <div class="owl-carousel owl-right owl-theme relative mt-6 px-2" style="position: relative !important;">
+                                        <div class="absolute nav-next w-full h-full left-0"></div>
+                                        <div class="item  bg-dark  ">
+                                            <a class="space-y-2 text-center" href="javascript:void(0)">
+                                                <div class="text-lg relative px-2">
+                                                    <span class="icon text-3xl  bet-ice-hockey"></span>
+                                                    <div class="absolute top-0  right-0 text-grey z-50 text-xs font-thin ">34</div>
+                                                </div>
+                                                <div class="text-xs font-extralight text-grey">Ice Hockey</div>
+                                            </a>
+                                        </div>
+
+                                        <div class="item  bg-dark  ">
+                                            <a class="space-y-2 text-center" href="javascript:void(0)">
+                                                <div class="text-lg relative px-2">
+                                                    <span class="icon text-3xl  bet-ice-hockey"></span>
+                                                    <div class="absolute top-0  right-0 text-grey z-50 text-xs font-thin ">34</div>
+                                                </div>
+                                                <div class="text-xs font-extralight text-grey">Ice Hockey</div>
+                                            </a>
+                                        </div>
+
+
+                                        <div class="item  bg-dark  ">
+                                            <a class="space-y-2 text-center" href="javascript:void(0)">
+                                                <div class="text-lg relative px-2">
+                                                    <span class="icon text-3xl  bet-ice-hockey"></span>
+                                                    <div class="absolute top-0  right-0 text-grey z-50 text-xs font-thin ">34</div>
+                                                </div>
+                                                <div class="text-xs font-extralight text-grey">Ice Hockey</div>
+                                            </a>
+                                        </div>
+
+                                        <div class="item  bg-dark  ">
+                                            <a class="space-y-2 text-center" href="javascript:void(0)">
+                                                <div class="text-lg relative px-2">
+                                                    <span class="icon text-3xl  bet-ice-hockey"></span>
+                                                    <div class="absolute top-0  right-0 text-grey z-50 text-xs font-thin ">34</div>
+                                                </div>
+                                                <div class="text-xs font-extralight text-grey">Ice Hockey</div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="w-full px-2 py-2 text-white text-sm bg-primary">Football</div>
+                                </div>
+                                <!-- Football section -->
+                                <div class="tab">
+                                    <nav class="flex  flex-col sm:flex-row justify-center text-sm px-4 space-x-4  ">
+                                        <button class=" py-2 block hover:text-primary focus:outline-none text-white border-b-2 font-medium border-primary ">
+                                           6hr
+                                        </button>
+                                        <button class="py-2 block text-grey  hover:text-primary focus:outline-none">
+                                           12hr
+                                        </button>
+                                        <button class="py-2  block text-grey  hover:text-primary focus:outline-none">
+                                            24hr
+                                         </button>
+
+                                    </nav>
+
+                                    <div class=" max-h-screen  nano">
+                                        <div class="nano-content space-y-1 px-2">
+
+                                            <div class="item">
+                                                <div class="flex flex-wrap flex-col">
+                                                    <div class="w-full text-sm ">
+                                                        <div class="teams text-sm font-bold w-10/12">
+                                                            <span>Greece (Sarafou)</span> - <span>Australia (KUBRIK)</span></div>
+                                                        <div class="groups text-xs font-thin text-grey w-10/12">
+                                                            <span>Electronic Leagues</span>: <span>GT World Nations League</span></div>
+                                                        <div class="time trxt-xs font-thin text-grey">9:20</div>
+                                                    </div>
+                                                    <div class="w-auto self-end">
+                                                        <div class="extra-details text-white">
+                                                            <span class="icon bet-desktop mr-2"></span>
+                                                            <span class="icon bet-scoreboard mr-2"></span><span>
+                                                                <span>4</span>
+                                                            <span class="icon bet-angle-right"></span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="flex flex-wrap flex-col">
+                                                    <div class="w-full text-sm ">
+                                                        <div class="teams text-sm font-bold w-10/12">
+                                                            <span>Greece (Sarafou)</span> - <span>Australia (KUBRIK)</span></div>
+                                                        <div class="groups text-xs font-thin text-grey w-10/12">
+                                                            <span>Electronic Leagues</span>: <span>GT World Nations League</span></div>
+                                                        <div class="time trxt-xs font-thin text-grey">9:20</div>
+                                                    </div>
+                                                    <div class="w-auto self-end">
+                                                        <div class="extra-details text-white">
+                                                            <span class="icon bet-desktop mr-2"></span>
+                                                            <span class="icon bet-scoreboard mr-2"></span><span>
+                                                                <span>4</span>
+                                                            <span class="icon bet-angle-right"></span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="flex flex-wrap flex-col">
+                                                    <div class="w-full text-sm ">
+                                                        <div class="teams text-sm font-bold w-10/12">
+                                                            <span>Greece (Sarafou)</span> - <span>Australia (KUBRIK)</span></div>
+                                                        <div class="groups text-xs font-thin text-grey w-10/12">
+                                                            <span>Electronic Leagues</span>: <span>GT World Nations League</span></div>
+                                                        <div class="time trxt-xs font-thin text-grey">9:20</div>
+                                                    </div>
+                                                    <div class="w-auto self-end">
+                                                        <div class="extra-details text-white">
+                                                            <span class="icon bet-desktop mr-2"></span>
+                                                            <span class="icon bet-scoreboard mr-2"></span><span>
+                                                                <span>4</span>
+                                                            <span class="icon bet-angle-right"></span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <div class="flex flex-wrap flex-col">
+                                                    <div class="w-full text-sm ">
+                                                        <div class="teams text-sm font-bold w-10/12">
+                                                            <span>Greece (Sarafou)</span> - <span>Australia (KUBRIK)</span></div>
+                                                        <div class="groups text-xs font-thin text-grey w-10/12">
+                                                            <span>Electronic Leagues</span>: <span>GT World Nations League</span></div>
+                                                        <div class="time trxt-xs font-thin text-grey">9:20</div>
+                                                    </div>
+                                                    <div class="w-auto self-end">
+                                                        <div class="extra-details text-white">
+                                                            <span class="icon bet-desktop mr-2"></span>
+                                                            <span class="icon bet-scoreboard mr-2"></span><span>
+                                                                <span>4</span>
+                                                            <span class="icon bet-angle-right"></span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="flex flex-wrap flex-col">
+                                                    <div class="w-full text-sm ">
+                                                        <div class="teams text-sm font-bold w-10/12">
+                                                            <span>Greece (Sarafou)</span> - <span>Australia (KUBRIK)</span></div>
+                                                        <div class="groups text-xs font-thin text-grey w-10/12">
+                                                            <span>Electronic Leagues</span>: <span>GT World Nations League</span></div>
+                                                        <div class="time trxt-xs font-thin text-grey">9:20</div>
+                                                    </div>
+                                                    <div class="w-auto self-end">
+                                                        <div class="extra-details text-white">
+                                                            <span class="icon bet-desktop mr-2"></span>
+                                                            <span class="icon bet-scoreboard mr-2"></span><span>
+                                                                <span>4</span>
+                                                            <span class="icon bet-angle-right"></span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="flex flex-wrap flex-col">
+                                                    <div class="w-full text-sm ">
+                                                        <div class="teams text-sm font-bold w-10/12">
+                                                            <span>Greece (Sarafou)</span> - <span>Australia (KUBRIK)</span></div>
+                                                        <div class="groups text-xs font-thin text-grey w-10/12">
+                                                            <span>Electronic Leagues</span>: <span>GT World Nations League</span></div>
+                                                        <div class="time trxt-xs font-thin text-grey">9:20</div>
+                                                    </div>
+                                                    <div class="w-auto self-end">
+                                                        <div class="extra-details text-white">
+                                                            <span class="icon bet-desktop mr-2"></span>
+                                                            <span class="icon bet-scoreboard mr-2"></span><span>
+                                                                <span>4</span>
+                                                            <span class="icon bet-angle-right"></span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="h-20"></div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="h-80"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src='js/jquery.nanoscroller.js'></script>
+    <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
+
+    <!-- Nano scroller -->
+    <script>
+        $(".nano").nanoScroller();
+    </script>
+
+    <script src="lib/owl.carousel.min.js"></script>
+
+    <script src="js/app.js">
+    </script>
 </body>
 
 </html>

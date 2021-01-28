@@ -30,7 +30,7 @@ module.exports = {
         extend: {},
     },
     plugins: [
-        require('tailwindcss-elevation')(['responsive']),
+        // require('tailwindcss-elevation')(['responsive']),
         require('@tailwindcss/custom-forms'),
     ],
 }

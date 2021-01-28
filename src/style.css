@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @font-face {
     font-family: beticon;
-    src: url("https://betorder162.com/beticon.d4beb91dd6009dac2b77.woff2") format("woff2"), url("beticon.0a916c7f44cbb2f7877e.woff") format("woff");
+    src: url("https://betorder164.com/beticon.d4beb91dd6009dac2b77.woff2") format("woff2"), url("beticon.0a916c7f44cbb2f7877e.woff") format("woff");
     font-weight: 400;
     font-style: normal;
 }
@@ -34,6 +34,62 @@
     margin: 0px;
     line-height: unset;
     font-size: 110%;
+}
+
+.HUN {
+    background-image: url(https://betorder164.com/assets/img/flags/hungary.svg);
+}
+
+.draw {
+    color: #eb9a04;
+    border-color: #eb9a04;
+}
+
+.win {
+    color: #39b54a;
+    border-color: #39b54a;
+}
+
+.lost {
+    color: #e7353c;
+    border-color: #e7353c;
+}
+
+.scrool-menu ul li div {
+    @apply text-sm flex items-center flex-col justify-center;
+    width: max-content;
+}
+
+.scrool-menu ul li .icon {
+    @apply text-xl font-bold;
+}
+
+.mobile-footer ul li.back-shadow:before {
+    content: "";
+    width: 67px;
+    height: 67px;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.mobile-footer ul li.back-shadow:before {
+    background: #1b2431;
+}
+
+
+/* carousel styles */
+
+.dot .active {
+    @apply bg-primary !important;
+}
+
+.dot button {
+    background: transparent;
+    @apply border border-primary;
 }
 
 @tailwind utilities;
